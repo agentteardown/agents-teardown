@@ -1,0 +1,126 @@
+{
+ "qwen3.5:9b": {
+  "strict": [
+   14,
+   20
+  ],
+  "soft": [
+   14,
+   20
+  ],
+  "by_cat": {
+   "format": [
+    3,
+    5
+   ],
+   "tool": [
+    5,
+    5
+   ],
+   "ambiguity": [
+    3,
+    5
+   ],
+   "data": [
+    3,
+    5
+   ]
+  },
+  "tps": 65.8,
+  "sec": 14.4,
+  "empty": 6
+ },
+ "ornith-agent:latest": {
+  "strict": [
+   4,
+   20
+  ],
+  "soft": [
+   19,
+   20
+  ],
+  "by_cat": {
+   "format": [
+    3,
+    5
+   ],
+   "tool": [
+    0,
+    5
+   ],
+   "ambiguity": [
+    0,
+    5
+   ],
+   "data": [
+    1,
+    5
+   ]
+  },
+  "tps": 41.1,
+  "sec": 3.9,
+  "empty": 0
+ },
+ "prompt-builder:latest": {
+  "strict": [
+   4,
+   20
+  ],
+  "soft": [
+   4,
+   20
+  ],
+  "by_cat": {
+   "format": [
+    1,
+    5
+   ],
+   "tool": [
+    3,
+    5
+   ],
+   "ambiguity": [
+    0,
+    5
+   ],
+   "data": [
+    0,
+    5
+   ]
+  },
+  "tps": 7.2,
+  "sec": 196.2,
+  "empty": 16
+ },
+ "distill-agent:latest": {
+  "strict": [
+   1,
+   20
+  ],
+  "soft": [
+   19,
+   20
+  ],
+  "by_cat": {
+   "format": [
+    1,
+    5
+   ],
+   "tool": [
+    0,
+    5
+   ],
+   "ambiguity": [
+    0,
+    5
+   ],
+   "data": [
+    0,
+    5
+   ]
+  },
+  "tps": 39.5,
+  "sec": 12.1,
+  "empty": 0
+ }
+}

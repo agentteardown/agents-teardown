@@ -1,0 +1,82 @@
+{
+ "qwen3.5:9b/fmt-01": {
+  "verdicts": [
+   true,
+   true,
+   true
+  ],
+  "identical_text": true
+ },
+ "qwen3.5:9b/tool-01": {
+  "verdicts": [
+   true,
+   true,
+   true
+  ],
+  "identical_text": true
+ },
+ "qwen3.5:9b/amb-01": {
+  "verdicts": [
+   true,
+   true,
+   true
+  ],
+  "identical_text": true
+ },
+ "qwen3.5:9b/data-01": {
+  "verdicts": [
+   true,
+   true,
+   true
+  ],
+  "identical_text": true
+ },
+ "qwen3.5:9b/data-04": {
+  "verdicts": [
+   true,
+   true,
+   true
+  ],
+  "identical_text": true
+ },
+ "ornith-agent:latest/fmt-01": {
+  "verdicts": [
+   true,
+   true,
+   true
+  ],
+  "identical_text": true
+ },
+ "ornith-agent:latest/tool-01": {
+  "verdicts": [
+   false,
+   false,
+   false
+  ],
+  "identical_text": true
+ },
+ "ornith-agent:latest/amb-01": {
+  "verdicts": [
+   false,
+   false,
+   false
+  ],
+  "identical_text": true
+ },
+ "ornith-agent:latest/data-01": {
+  "verdicts": [
+   true,
+   true,
+   true
+  ],
+  "identical_text": true
+ },
+ "ornith-agent:latest/data-04": {
+  "verdicts": [
+   false,
+   false,
+   false
+  ],
+  "identical_text": true
+ }
+}

@@ -1,0 +1,27 @@
+
+=== prompt-builder:latest
+  fmt-01   FAIL 214.2s  not a json object
+  fmt-02   ok   39.1s  got ['nginx', 'postgres', 'redis']
+  fmt-03   FAIL 219.2s  not a json object
+  fmt-04   FAIL 211.2s  not a json object
+  fmt-05   FAIL 212.2s  no key
+  tool-01  FAIL 214.2s  got '<NO ANSWER: thinking only, 1500 tokens, length>
+  tool-02  ok  182.2s  got 'read_file'
+  tool-03  ok  126.5s  got 'search_web'
+  tool-04  FAIL 208.7s  got '<NO ANSWER: thinking only, 1500 tokens, length>
+  tool-05  ok  144.8s  got 'ASK'
+  amb-01   FAIL 209.0s  got '<NO ANSWER: thinking only, 1500 tokens, length>
+  amb-02   FAIL 241.1s  got '<NO ANSWER: thinking only, 1500 tokens, length>
+  amb-03   FAIL 230.9s  got 1500.0
+  amb-04   FAIL 208.6s  got '<NO ANSWER: thinking only, 1500 tokens, length>
+  amb-05   FAIL 208.8s  got '<NO ANSWER: thinking only, 1500 tokens, length>
+  data-01  FAIL 208.6s  got 1500.0
+  data-02  FAIL 208.1s  got '<NO ANSWER: thinking only, 1500 tokens, length>
+  data-03  FAIL 207.8s  got '<NO ANSWER: thinking only, 1500 tokens, length>
+  data-04  FAIL 210.2s  got 1500.0
+  data-05  FAIL 218.6s  got 1500.0
+  → 4/20  7.1 tok/s  avg 196.2s
+
+=== SUMMARY
+model                          total  format   tool  ambig  data   tok/s
+prompt-builder:latest          4/20    1/5   3/5   0/5   0/5     7.1

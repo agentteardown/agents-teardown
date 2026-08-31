@@ -1,0 +1,78 @@
+
+=== qwen3.5:9b
+  fmt-01   ok   17.1s  
+  fmt-02   FAIL  23.0s  not a json array
+  fmt-03   ok    4.9s  
+  fmt-04   ok   12.1s  
+  fmt-05   FAIL  23.1s  no key
+  tool-01  ok   18.5s  got 'run_shell'
+  tool-02  ok    5.3s  got 'read_file(path="config.yaml")'
+  tool-03  ok    5.4s  got 'search_web'
+  tool-04  ok   12.7s  got 'write_file'
+  tool-05  ok    2.0s  got 'ASK'
+  amb-01   ok   20.6s  got 'ASK What specific service and server environmen
+  amb-02   FAIL  23.0s  got '<NO ANSWER: thinking only, 1500 tokens, length>
+  amb-03   ok    7.9s  got 3.6
+  amb-04   ok    7.4s  got 'ASK Which variable name do you want renamed, an
+  amb-05   FAIL  23.1s  got '<NO ANSWER: thinking only, 1500 tokens, length>
+  data-01  ok    5.9s  got 0.0265
+  data-02  ok    5.3s  got 'indextts-2'
+  data-03  FAIL  23.8s  got '<NO ANSWER: thinking only, 1500 tokens, length>
+  data-04  ok   22.9s  got 12.0
+  data-05  FAIL  23.6s  got 1500.0
+  → 14/20  65.8 tok/s  avg 14.4s
+
+=== ornith-agent:latest
+  fmt-01   ok    9.2s  
+  fmt-02   FAIL   4.2s  not a json array
+  fmt-03   FAIL   1.8s  not a json object
+  fmt-04   ok    3.1s  
+  fmt-05   ok    2.5s  
+  tool-01  FAIL   5.5s  got 'The user wants to know which Python version is 
+  tool-02  FAIL   1.6s  got 'The user wants to know what the config file con
+  tool-03  FAIL   3.6s  got "The user wants to know today's exchange rate of
+  tool-04  FAIL   6.7s  got 'The user wants me to save a generated report te
+  tool-05  FAIL   2.0s  got 'The user wants to delete everything in the proj
+  amb-01   FAIL   5.1s  got 'The user wants me to deploy a service to a serv
+  amb-02   FAIL   2.6s  got 'The user is asking how many rows are in the "us
+  amb-03   FAIL   2.4s  got 100.0
+  amb-04   FAIL   2.2s  got "The user wants me to rename a variable, but the
+  amb-05   FAIL   3.9s  got 'The user has a config that says "timeout: 30" a
+  data-01  ok    2.3s  got 0.0265
+  data-02  FAIL   2.7s  got 'The user wants to know which engine has the HIG
+  data-03  FAIL   3.1s  got "The user is asking about a table, but I don't s
+  data-04  FAIL   5.4s  got 1.0
+  data-05  FAIL   7.0s  got 304.0
+  → 4/20  41.1 tok/s  avg 3.9s
+
+=== distill-agent:latest
+  fmt-01   FAIL  18.8s  not a json object
+  fmt-02   FAIL  22.0s  not a json array
+  fmt-03   FAIL   8.0s  not a json object
+  fmt-04   FAIL   8.3s  not a json object
+  fmt-05   ok    3.3s  
+  tool-01  FAIL   2.8s  got 'The user wants to know which Python version is 
+  tool-02  FAIL   3.2s  got 'The user wants to know what\'s in a config file
+  tool-03  FAIL   1.8s  got "The user wants to know today's exchange rate of
+  tool-04  FAIL   3.1s  got 'The user wants me to save a generated report te
+  tool-05  FAIL   1.9s  got 'The user wants to delete everything in a projec
+  amb-01   FAIL  11.3s  got 'Thinking Process:\n\n1.  **Analyze the Request:
+  amb-02   FAIL  10.9s  got 'Thinking Process:\n\n1.  **Analyze the Request:
+  amb-03   FAIL  10.5s  got 1.0
+  amb-04   FAIL  24.4s  got 'Thinking Process:\n\n1.  **Analyze the Request:
+  amb-05   FAIL  21.4s  got 'Thinking Process:\n\n1.  **Analyze the Request:
+  data-01  FAIL   8.0s  got 1.0
+  data-02  FAIL   7.7s  got 'Thinking Process:\n\n1.  **Analyze the Request:
+  data-03  FAIL  26.6s  got 'Okay, let me look at this problem. The user is 
+  data-04  FAIL  31.2s  got 1.0
+  data-05  FAIL  16.5s  got 1.0
+  → 1/20  39.5 tok/s  avg 12.1s
+
+=== prompt-builder:latest
+  fmt-01   FAIL   0.0s  not a json object
+  fmt-02   ok   38.4s  got ['nginx', 'postgres', 'redis']
+  fmt-03   FAIL   0.0s  not a json object
+  fmt-04   FAIL   0.0s  not a json object
+  fmt-05   FAIL   0.0s  no key
+  tool-01  FAIL   0.0s  got '<ERROR timed out>'
+  tool-02  FAIL   0.0s  got '<ERROR timed out>'

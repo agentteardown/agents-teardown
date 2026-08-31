@@ -1,0 +1,173 @@
+{
+ "models": {
+  "qwen3.5:9b": {
+   "strict_pct": 70,
+   "lenient_pct": 70,
+   "gap_pp": 0,
+   "strict_n": [
+    14,
+    20
+   ],
+   "lenient_n": [
+    14,
+    20
+   ],
+   "by_cat": {
+    "format": [
+     3,
+     5
+    ],
+    "tool": [
+     5,
+     5
+    ],
+    "ambiguity": [
+     3,
+     5
+    ],
+    "data": [
+     3,
+     5
+    ]
+   },
+   "tok_per_s": 65.8,
+   "sec_per_task": 14.4,
+   "empty_answers": 6,
+   "think_chars_max": 7160,
+   "token_cap_hits": 1500,
+   "params": "9.7B",
+   "gib": 6.1,
+   "quant": "Q4_K_M"
+  },
+  "ornith-agent:latest": {
+   "strict_pct": 20,
+   "lenient_pct": 95,
+   "gap_pp": 75,
+   "strict_n": [
+    4,
+    20
+   ],
+   "lenient_n": [
+    19,
+    20
+   ],
+   "by_cat": {
+    "format": [
+     3,
+     5
+    ],
+    "tool": [
+     0,
+     5
+    ],
+    "ambiguity": [
+     0,
+     5
+    ],
+    "data": [
+     1,
+     5
+    ]
+   },
+   "tok_per_s": 41.1,
+   "sec_per_task": 3.9,
+   "empty_answers": 0,
+   "think_chars_max": 0,
+   "token_cap_hits": 0,
+   "params": "9.0B",
+   "gib": 9.7,
+   "quant": "Q8_0"
+  },
+  "distill-agent:latest": {
+   "strict_pct": 5,
+   "lenient_pct": 95,
+   "gap_pp": 90,
+   "strict_n": [
+    1,
+    20
+   ],
+   "lenient_n": [
+    19,
+    20
+   ],
+   "by_cat": {
+    "format": [
+     1,
+     5
+    ],
+    "tool": [
+     0,
+     5
+    ],
+    "ambiguity": [
+     0,
+     5
+    ],
+    "data": [
+     0,
+     5
+    ]
+   },
+   "tok_per_s": 39.5,
+   "sec_per_task": 12.1,
+   "empty_answers": 0,
+   "think_chars_max": 0,
+   "token_cap_hits": 0,
+   "params": "9.2B",
+   "gib": 9.1,
+   "quant": "Q8_0"
+  },
+  "prompt-builder:latest": {
+   "strict_pct": 20,
+   "lenient_pct": 20,
+   "gap_pp": 0,
+   "strict_n": [
+    4,
+    20
+   ],
+   "lenient_n": [
+    4,
+    20
+   ],
+   "by_cat": {
+    "format": [
+     1,
+     5
+    ],
+    "tool": [
+     3,
+     5
+    ],
+    "ambiguity": [
+     0,
+     5
+    ],
+    "data": [
+     0,
+     5
+    ]
+   },
+   "tok_per_s": 7.2,
+   "sec_per_task": 196.2,
+   "empty_answers": 16,
+   "think_chars_max": 6718,
+   "token_cap_hits": 1500,
+   "params": "27.8B",
+   "gib": 16.2,
+   "quant": "Q4_K_M"
+  }
+ },
+ "meta": {
+  "tasks": 20,
+  "models": 4,
+  "judge_controls": 13,
+  "stability_runs": 30,
+  "stability_verdict_changes": 0,
+  "stability_text_drift": 0
+ },
+ "examples": {
+  "tool01_words_before_call": 39,
+  "lenient_echo_pass": 14,
+  "qwen_vs_27b_sec_ratio": 13.6
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "prompt-builder:latest": {
+  "by_cat": {
+   "format": [
+    1,
+    5
+   ],
+   "tool": [
+    3,
+    5
+   ],
+   "ambiguity": [
+    0,
+    5
+   ],
+   "data": [
+    0,
+    5
+   ]
+  },
+  "total": [
+   4,
+   20
+  ],
+  "tps": 7.1,
+  "sec_avg": 196.2,
+  "tok_avg": 1372
+ }
+}
