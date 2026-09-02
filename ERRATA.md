@@ -61,9 +61,26 @@ The re-run below separates them.
 
 ### Corrected numbers
 
-The four models are being re-scored on the fixed task set; the table lands here
-with the next episode, together with the raw log. The EP01 files stay exactly as
-published — this page is the correction, not a rewrite of the record.
+The four models were re-run on the fixed task set (2026-09-02, same judge, same
+hardware, `ASK_TIMEOUT=600`). Raw log: `ep01-local-llm-bench/corrected/`.
+
+| model | in the video | fixed task set | change |
+|---|---|---|---|
+| `qwen3.5:9b` | 14/20 = 70% | **15/20 = 75%** | +1 |
+| `ornith-agent` 9B | 4/20 = 20% | 4/20 = 20% | — |
+| `prompt-builder` 27B | 4/20 = 20% | 4/20 = 20% | — |
+| `distill-agent` 9B | 1/20 = 5% | 1/20 = 5% | — |
+
+The fix moved exactly one number. Only `qwen3.5:9b` had been answering those two
+tasks well enough to be robbed by them; the other three were failing them for
+their own reasons. The ranking in the video stands, and so does the 95%-vs-5%
+comparison, which is strict judge against lenient judge and does not depend on
+these two tasks.
+
+An earlier version of this page estimated the effect arithmetically — "every
+model loses 1 of 20, so score out of 19, qwen at 73.7%". That was wrong. The
+fixed `data-03` is answerable, so the denominator stays 20, and the measured
+result is 75%. The estimate is left mentioned here rather than quietly deleted.
 
 To see the defects yourself:
 
@@ -71,3 +88,17 @@ To see the defects yourself:
 python3 tasks_check.py --selftest    # 5/5, both defects wired in as controls
 python3 tasks_check.py               # flags data-03 and data-04 in the EP01 set
 ```
+
+### One more thing the re-run exposed
+
+`run.py` used a 180 s timeout by default. The 27B model needs a median of 209 s
+per task, so re-running it with the default silently scored 19 of 20 tasks as
+failures — a model that was never waited for long enough looked exactly like a
+model that got the answer wrong. Timeouts are now logged as `TIMEOUT` together
+with the limit that was in force.
+
+The judge had a smaller version of the same problem: when a model returned
+nothing, the placeholder text `<NO ANSWER: thinking only, 1500 tokens>` was fed
+to the numeric check, which dutifully reported `got 1500.0`. The verdict was
+correct either way, but the log read as if the model had answered 1500. Fixed
+and verified against 120 stored answers: zero verdicts moved.
