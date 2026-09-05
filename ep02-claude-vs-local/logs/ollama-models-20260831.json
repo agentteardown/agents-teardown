@@ -1,0 +1,101 @@
+{
+ "source": "ollama /api/tags",
+ "date": "2026-08-31",
+ "models": [
+  {
+   "name": "ornith-agent:latest",
+   "model": "ornith-agent:latest",
+   "modified_at": "2026-08-20T13:22:55.3333911+03:00",
+   "size": 10449206506,
+   "digest": "46b6fdbcb6e7a566d623d5a7150fd4d25ea3cb72b62770c5ad2cbdcd4dc66969",
+   "details": {
+    "parent_model": "hf.co/ornith-ai/Ornith-1.5-9B-GGUF:Q8_0",
+    "format": "gguf",
+    "family": "qwen35",
+    "families": [
+     "qwen35"
+    ],
+    "parameter_size": "9.0B",
+    "quantization_level": "Q8_0",
+    "context_length": 262144,
+    "embedding_length": 4096
+   },
+   "capabilities": [
+    "completion",
+    "vision"
+   ]
+  },
+  {
+   "name": "distill-agent:latest",
+   "model": "distill-agent:latest",
+   "modified_at": "2026-08-20T12:18:03.1266506+03:00",
+   "size": 9786060483,
+   "digest": "009d305623318eecab26fa6696197f63ed133a8cad598102d77c00d7b7778af5",
+   "details": {
+    "parent_model": "hf.co/empero-ai/Qwen3.8-9B-Distill-GGUF:Q8_0",
+    "format": "gguf",
+    "family": "qwen35",
+    "families": [
+     "qwen35"
+    ],
+    "parameter_size": "9.2B",
+    "quantization_level": "Q8_0",
+    "context_length": 262144,
+    "embedding_length": 4096
+   },
+   "capabilities": [
+    "completion"
+   ]
+  },
+  {
+   "name": "prompt-builder:latest",
+   "model": "prompt-builder:latest",
+   "modified_at": "2026-07-18T21:03:40.439807+03:00",
+   "size": 17420436422,
+   "digest": "38ce63b3a4e12fe2dcbc899f8d5d38e5f83928bd0c9ed94e3d02fc601f263b5c",
+   "details": {
+    "parent_model": "qwen3.6:27b",
+    "format": "gguf",
+    "family": "qwen35",
+    "families": [
+     "qwen35"
+    ],
+    "parameter_size": "27.8B",
+    "quantization_level": "Q4_K_M",
+    "context_length": 262144,
+    "embedding_length": 5120
+   },
+   "capabilities": [
+    "vision",
+    "completion",
+    "tools",
+    "thinking"
+   ]
+  },
+  {
+   "name": "qwen3.5:9b",
+   "model": "qwen3.5:9b",
+   "modified_at": "2026-07-15T00:30:58.7621149+03:00",
+   "size": 6594474711,
+   "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+   "details": {
+    "parent_model": "",
+    "format": "gguf",
+    "family": "qwen35",
+    "families": [
+     "qwen35"
+    ],
+    "parameter_size": "9.7B",
+    "quantization_level": "Q4_K_M",
+    "context_length": 262144,
+    "embedding_length": 4096
+   },
+   "capabilities": [
+    "vision",
+    "completion",
+    "tools",
+    "thinking"
+   ]
+  }
+ ]
+}

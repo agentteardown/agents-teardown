@@ -1,0 +1,20 @@
+{"model": "qwen3.5:9b", "id": "fmt-01", "cat": "format", "ok": true, "why": "", "sec": 17.66, "tps": 46.3, "tokens": 792, "think_chars": 2855, "answer": "{\"file\": \"app/db.py\", \"line\": 214}"}
+{"model": "qwen3.5:9b", "id": "fmt-02", "cat": "format", "ok": true, "why": "got ['nginx', 'postgres', 'redis']", "sec": 41.84, "tps": 45.8, "tokens": 1890, "think_chars": 7390, "answer": "[\"redis\", \"postgres\", \"nginx\"]"}
+{"model": "qwen3.5:9b", "id": "fmt-03", "cat": "format", "ok": true, "why": "", "sec": 5.43, "tps": 59.3, "tokens": 294, "think_chars": 1042, "answer": "{\"ok\": true}"}
+{"model": "qwen3.5:9b", "id": "fmt-04", "cat": "format", "ok": true, "why": "", "sec": 13.67, "tps": 58.7, "tokens": 769, "think_chars": 2382, "answer": "{\"seconds\": 20}"}
+{"model": "qwen3.5:9b", "id": "fmt-05", "cat": "format", "ok": true, "why": "", "sec": 26.59, "tps": 60.0, "tokens": 1566, "think_chars": 6325, "answer": "{\"cmd\": \"tail -n 20 /var/log/app.log\"}"}
+{"model": "qwen3.5:9b", "id": "tool-01", "cat": "tool", "ok": true, "why": "got 'run_shell'", "sec": 20.44, "tps": 60.4, "tokens": 1202, "think_chars": 5446, "answer": "run_shell"}
+{"model": "qwen3.5:9b", "id": "tool-02", "cat": "tool", "ok": true, "why": "got 'read_file(path=\"config.yaml\")'", "sec": 5.95, "tps": 59.5, "tokens": 322, "think_chars": 1486, "answer": "read_file(path=\"config.yaml\")"}
+{"model": "qwen3.5:9b", "id": "tool-03", "cat": "tool", "ok": true, "why": "got 'search_web'", "sec": 6.1, "tps": 60.3, "tokens": 332, "think_chars": 1539, "answer": "search_web"}
+{"model": "qwen3.5:9b", "id": "tool-04", "cat": "tool", "ok": true, "why": "got 'write_file'", "sec": 14.21, "tps": 60.1, "tokens": 821, "think_chars": 3901, "answer": "write_file"}
+{"model": "qwen3.5:9b", "id": "tool-05", "cat": "tool", "ok": true, "why": "got 'ASK'", "sec": 2.29, "tps": 61.3, "tokens": 106, "think_chars": 570, "answer": "ASK"}
+{"model": "qwen3.5:9b", "id": "amb-01", "cat": "ambiguity", "ok": true, "why": "got 'ASK What specific service and server environment details do '", "sec": 22.59, "tps": 60.7, "tokens": 1335, "think_chars": 5596, "answer": "ASK What specific service and server environment details do you have for deployment?"}
+{"model": "qwen3.5:9b", "id": "amb-02", "cat": "ambiguity", "ok": true, "why": "got 'ASK Can you provide access to the database containing the us'", "sec": 59.01, "tps": 60.2, "tokens": 3523, "think_chars": 15215, "answer": "ASK Can you provide access to the database containing the users table?"}
+{"model": "qwen3.5:9b", "id": "amb-03", "cat": "ambiguity", "ok": true, "why": "got 3.6", "sec": 8.63, "tps": 61.1, "tokens": 494, "think_chars": 1287, "answer": "3.6"}
+{"model": "qwen3.5:9b", "id": "amb-04", "cat": "ambiguity", "ok": true, "why": "got 'ASK Which variable name do you want renamed, and what is its'", "sec": 8.18, "tps": 60.2, "tokens": 460, "think_chars": 1795, "answer": "ASK Which variable name do you want renamed, and what is its current value?"}
+{"model": "qwen3.5:9b", "id": "amb-05", "cat": "ambiguity", "ok": true, "why": "got 'ASK Is that milliseconds or seconds?'", "sec": 62.31, "tps": 60.0, "tokens": 3709, "think_chars": 15697, "answer": "ASK Is that milliseconds or seconds?"}
+{"model": "qwen3.5:9b", "id": "data-01", "cat": "data", "ok": true, "why": "got 0.0265", "sec": 6.36, "tps": 61.6, "tokens": 354, "think_chars": 1020, "answer": "0.0265"}
+{"model": "qwen3.5:9b", "id": "data-02", "cat": "data", "ok": true, "why": "got 'indextts-2'", "sec": 5.71, "tps": 61.3, "tokens": 317, "think_chars": 762, "answer": "indextts-2"}
+{"model": "qwen3.5:9b", "id": "data-03", "cat": "data", "ok": true, "why": "got 'kokoro-82m'", "sec": 5.67, "tps": 61.0, "tokens": 312, "think_chars": 776, "answer": "kokoro-82m"}
+{"model": "qwen3.5:9b", "id": "data-04", "cat": "data", "ok": true, "why": "got 12.0", "sec": 22.1, "tps": 61.4, "tokens": 1326, "think_chars": 3099, "answer": "12"}
+{"model": "qwen3.5:9b", "id": "data-05", "cat": "data", "ok": true, "why": "got 77.0", "sec": 28.65, "tps": 61.4, "tokens": 1725, "think_chars": 4567, "answer": "77.0"}

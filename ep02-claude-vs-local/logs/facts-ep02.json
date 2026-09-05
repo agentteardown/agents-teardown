@@ -1,0 +1,405 @@
+{
+ "models": {
+  "haiku": {
+   "id": "claude-code/haiku",
+   "strict_n": [
+    19,
+    20
+   ],
+   "strict_pct": 95,
+   "by_cat": {
+    "format": [
+     4,
+     5
+    ],
+    "tool": [
+     5,
+     5
+    ],
+    "ambiguity": [
+     5,
+     5
+    ],
+    "data": [
+     5,
+     5
+    ]
+   },
+   "sec_per_task": 4.2,
+   "sec_median": 3.7,
+   "cost_usd": 0.14,
+   "cost_usd_exact": 0.1355,
+   "in_tokens_avg": 12673,
+   "out_tokens_avg": 170.3,
+   "tok_per_s": 0,
+   "empty_answers": 0
+  },
+  "sonnet": {
+   "id": "claude-code/sonnet",
+   "strict_n": [
+    19,
+    20
+   ],
+   "strict_pct": 95,
+   "by_cat": {
+    "format": [
+     5,
+     5
+    ],
+    "tool": [
+     5,
+     5
+    ],
+    "ambiguity": [
+     5,
+     5
+    ],
+    "data": [
+     4,
+     5
+    ]
+   },
+   "sec_per_task": 3.8,
+   "sec_median": 3.5,
+   "cost_usd": 0.38,
+   "cost_usd_exact": 0.3766,
+   "in_tokens_avg": 15615,
+   "out_tokens_avg": 15.8,
+   "tok_per_s": 0,
+   "empty_answers": 0
+  },
+  "27b": {
+   "id": "prompt-builder:latest",
+   "strict_n": [
+    4,
+    20
+   ],
+   "strict_pct": 20,
+   "by_cat": {
+    "format": [
+     1,
+     5
+    ],
+    "tool": [
+     3,
+     5
+    ],
+    "ambiguity": [
+     0,
+     5
+    ],
+    "data": [
+     0,
+     5
+    ]
+   },
+   "sec_per_task": 221.9,
+   "sec_median": 213.6,
+   "cost_usd": 0.0,
+   "cost_usd_exact": 0.0,
+   "in_tokens_avg": 0,
+   "out_tokens_avg": 0,
+   "tok_per_s": 6.3,
+   "empty_answers": 14,
+   "params": "27.8B",
+   "gib": 16.2
+  },
+  "qwen": {
+   "id": "qwen3.5:9b",
+   "strict_n": [
+    15,
+    20
+   ],
+   "strict_pct": 75,
+   "by_cat": {
+    "format": [
+     3,
+     5
+    ],
+    "tool": [
+     5,
+     5
+    ],
+    "ambiguity": [
+     3,
+     5
+    ],
+    "data": [
+     4,
+     5
+    ]
+   },
+   "sec_per_task": 13.8,
+   "sec_median": 12.7,
+   "cost_usd": 0.0,
+   "cost_usd_exact": 0.0,
+   "in_tokens_avg": 0,
+   "out_tokens_avg": 0,
+   "tok_per_s": 64.7,
+   "empty_answers": 5,
+   "params": "9.7B",
+   "gib": 6.1
+  },
+  "ornith": {
+   "id": "ornith-agent:latest",
+   "strict_n": [
+    4,
+    20
+   ],
+   "strict_pct": 20,
+   "by_cat": {
+    "format": [
+     3,
+     5
+    ],
+    "tool": [
+     0,
+     5
+    ],
+    "ambiguity": [
+     0,
+     5
+    ],
+    "data": [
+     1,
+     5
+    ]
+   },
+   "sec_per_task": 3.8,
+   "sec_median": 3.0,
+   "cost_usd": 0.0,
+   "cost_usd_exact": 0.0,
+   "in_tokens_avg": 0,
+   "out_tokens_avg": 0,
+   "tok_per_s": 42.2,
+   "empty_answers": 0,
+   "params": "9.0B",
+   "gib": 9.7
+  },
+  "distill": {
+   "id": "distill-agent:latest",
+   "strict_n": [
+    1,
+    20
+   ],
+   "strict_pct": 5,
+   "by_cat": {
+    "format": [
+     1,
+     5
+    ],
+    "tool": [
+     0,
+     5
+    ],
+    "ambiguity": [
+     0,
+     5
+    ],
+    "data": [
+     0,
+     5
+    ]
+   },
+   "sec_per_task": 10.3,
+   "sec_median": 8.3,
+   "cost_usd": 0.0,
+   "cost_usd_exact": 0.0,
+   "in_tokens_avg": 0,
+   "out_tokens_avg": 0,
+   "tok_per_s": 41.8,
+   "empty_answers": 0,
+   "params": "9.2B",
+   "gib": 9.1
+  }
+ },
+ "meta": {
+  "tasks": 20,
+  "date": "2026-09-02"
+ },
+ "examples": {
+  "ep01_strict": {
+   "qwen": [
+    14,
+    20
+   ],
+   "ornith": [
+    4,
+    20
+   ],
+   "27b": [
+    4,
+    20
+   ],
+   "distill": [
+    1,
+    20
+   ]
+  },
+  "fixed_strict": {
+   "27b": [
+    4,
+    20
+   ],
+   "qwen": [
+    15,
+    20
+   ],
+   "ornith": [
+    4,
+    20
+   ],
+   "distill": [
+    1,
+    20
+   ]
+  },
+  "scores_moved": 1,
+  "qwen_ep01_pct": 70,
+  "qwen_fixed_pct": 75,
+  "sonnet_vs_haiku_cost_ratio": 2.8,
+  "system_prompt_tokens": 12673,
+  "cost_per_task_min": 0.0031,
+  "qwen_vs_27b_sec_ratio": 16.1,
+  "sonnet_data05": "(304-70)/304*100 = 76.97...\n\n76.9",
+  "haiku_data05": "77.0",
+  "data05_expected": 77.0,
+  "data05_prompt_tail": "What percentage of words survived? Answer with the number only, one decimal.",
+  "ornith_data03_ep01": "The user is asking about a table, but I don't see any table in this conversation. There's no previous context or table p",
+  "broken_tasks": [
+   "data-03",
+   "data-04"
+  ],
+  "bench_bug_found_by": "both sides failed the same task with the same complaint",
+  "local_matches_cloud_cats": [
+   "tool"
+  ],
+  "cloud_runs": [
+   {
+    "file": "cc-20260902-1741.jsonl",
+    "haiku": [
+     19,
+     20
+    ],
+    "sonnet": [
+     19,
+     20
+    ]
+   },
+   {
+    "file": "cc-20260903-1007.jsonl",
+    "haiku": [
+     19,
+     20
+    ],
+    "sonnet": [
+     18,
+     20
+    ]
+   },
+   {
+    "file": "cc-20260903-1010.jsonl",
+    "haiku": [
+     19,
+     20
+    ],
+    "sonnet": [
+     19,
+     20
+    ]
+   }
+  ],
+  "cloud_runs_n": 3,
+  "haiku_ge_sonnet_runs": 3,
+  "haiku_scores": [
+   19,
+   19,
+   19
+  ],
+  "sonnet_scores": [
+   19,
+   18,
+   19
+  ],
+  "qwen_misses": 5,
+  "qwen_misses_no_answer": 5,
+  "num_predict_default": 1500,
+  "qwen_cap4000_strict": [
+   20,
+   20
+  ],
+  "qwen_cap4000_no_answer": 0,
+  "qwen_cap4000_sec": 19.2,
+  "qwen_cap4000_by_cat": {
+   "format": [
+    5,
+    5
+   ],
+   "tool": [
+    5,
+    5
+   ],
+   "ambiguity": [
+    5,
+    5
+   ],
+   "data": [
+    5,
+    5
+   ]
+  },
+  "haiku_format_fenced": 5,
+  "qwen_format_bare": 3,
+  "lenient_fixed": {
+   "27b": [
+    4,
+    20
+   ],
+   "qwen": [
+    15,
+    20
+   ],
+   "ornith": [
+    20,
+    20
+   ],
+   "distill": [
+    20,
+    20
+   ]
+  },
+  "timeout_27b_timeouts": 2,
+  "task_words_max": 40,
+  "task_words_avg": 27,
+  "haiku_in_tokens_fixed": 14863,
+  "sonnet_in_tokens_fixed": 19248,
+  "haiku_cost_runs": [
+   0.14,
+   0.19,
+   0.18
+  ],
+  "sonnet_cost_runs": [
+   0.38,
+   0.38,
+   0.38
+  ],
+  "haiku_cost_avg": 0.17,
+  "sonnet_cost_avg": 0.38,
+  "sonnet_vs_haiku_cost_ratio_avg": 2.2,
+  "haiku_wins": 1,
+  "ties": 2,
+  "haiku_out_tokens_avg": 170.3,
+  "qwen_cap4000_sec_median": 13.9,
+  "qwen_cap4000_vs_27b_median_ratio": 15.4,
+  "qwen_cap4000_max_tokens": 3709,
+  "27b_timeouts_600": 2,
+  "num_predict_raised": 4000,
+  "qwen_vs_27b_median_ratio": 16.8,
+  "cloud_vs_qwen_cap_sec_ratio": 4.6,
+  "sonnet_in_tokens_avg": 15615,
+  "27b_empty_answers": 14,
+  "rejudged_answers": 120,
+  "timeout_default_s": 180,
+  "timeout_27b_median_s": 213.8
+ }
+}

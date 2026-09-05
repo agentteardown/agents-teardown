@@ -1,0 +1,20 @@
+{"model": "prompt-builder:latest", "id": "fmt-01", "cat": "format", "ok": false, "why": "not a json object", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "fmt-02", "cat": "format", "ok": true, "why": "got ['nginx', 'postgres', 'redis']", "sec": 79.89, "tps": 4.1, "tokens": 269, "think_chars": 937, "answer": "[\"redis\",\"postgres\",\"nginx\"]"}
+{"model": "prompt-builder:latest", "id": "fmt-03", "cat": "format", "ok": false, "why": "not a json object", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "fmt-04", "cat": "format", "ok": false, "why": "not a json object", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "fmt-05", "cat": "format", "ok": false, "why": "no key", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "tool-01", "cat": "tool", "ok": false, "why": "got '<ERROR timed out>'", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "tool-02", "cat": "tool", "ok": false, "why": "got '<ERROR timed out>'", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "tool-03", "cat": "tool", "ok": false, "why": "got '<ERROR timed out>'", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "tool-04", "cat": "tool", "ok": false, "why": "got '<ERROR timed out>'", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "tool-05", "cat": "tool", "ok": false, "why": "got '<ERROR timed out>'", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "amb-01", "cat": "ambiguity", "ok": false, "why": "got '<ERROR timed out>'", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "amb-02", "cat": "ambiguity", "ok": false, "why": "got '<ERROR timed out>'", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "amb-03", "cat": "ambiguity", "ok": false, "why": "ответа не было: <ERROR timed out>", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "amb-04", "cat": "ambiguity", "ok": false, "why": "got '<ERROR timed out>'", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "amb-05", "cat": "ambiguity", "ok": false, "why": "got '<ERROR timed out>'", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "data-01", "cat": "data", "ok": false, "why": "ответа не было: <ERROR timed out>", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "data-02", "cat": "data", "ok": false, "why": "got '<ERROR timed out>'", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "data-03", "cat": "data", "ok": false, "why": "got '<ERROR timed out>'", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "data-04", "cat": "data", "ok": false, "why": "ответа не было: <ERROR timed out>", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}
+{"model": "prompt-builder:latest", "id": "data-05", "cat": "data", "ok": false, "why": "ответа не было: <ERROR timed out>", "sec": 0.0, "tps": 0.0, "tokens": 0, "think_chars": 0, "answer": "<ERROR timed out>"}

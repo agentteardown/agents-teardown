@@ -7,6 +7,7 @@ data that was measured. No number appears on screen unless it is in a file here.
 | episode | what was measured | folder |
 |---|---|---|
 | EP01 | four local LLMs, 20 agent tasks, two judges — 95% or 5% | [`ep01-local-llm-bench`](ep01-local-llm-bench) |
+| EP02 | Claude Code (haiku, sonnet) vs four local models, same 20 tasks, strict judge — a free 9B at 20/20 after the harness cap was raised | [`ep02-claude-vs-local`](ep02-claude-vs-local) |
 
 Corrections to published material are in [`ERRATA.md`](ERRATA.md). Two of the
 twenty EP01 tasks turned out to be broken; the original files are left exactly
