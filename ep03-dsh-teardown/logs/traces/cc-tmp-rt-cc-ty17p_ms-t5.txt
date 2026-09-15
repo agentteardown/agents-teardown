@@ -1,0 +1,6 @@
+call Bash   find /tmp/rt-cc-ty17p_ms/t5 -type f \( -name "*.py" -o -name "requirements*.txt" -o -name "setup.py" \) 2>/dev/null | he
+res  /tmp/rt-cc-ty17p_ms/t5/test_service.py ⏎ /tmp/rt-cc-ty17p_ms/t5/service.py
+call Bash   find /tmp/rt-cc-ty17p_ms/t5 -name "sdk*" -o -name "*payment*" 2>/dev/null | head -30; echo "---"; cat /etc/os-release 2>
+res  --- ⏎ PRETTY_NAME="Ubuntu 26.04 LTS" ⏎ NAME="Ubuntu" ⏎ VERSION_ID="26.04" ⏎ VERSION="26.04 (Resolute Raccoon)" ⏎ VERSION
+call Read   /tmp/rt-cc-ty17p_ms/t5/service.py
+res  1	VERSION = "3.11" ⏎ 2	def run(): ⏎ 3	    return f"payment service on python {VERSION}" ⏎ 4	

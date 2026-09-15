@@ -1,0 +1,10 @@
+call Read   /tmp/rt-cc-g7r5r3m9/t3/report.py
+res  1	def daily_total(rows): ⏎ 2	    total = 0 ⏎ 3	    for r in rows: ⏎ 4	        if r["kind"] == "daily": ⏎ 5	            t
+call Bash   find /tmp/rt-cc-g7r5r3m9/t3 -name "test_*.py" -o -name "*_test.py" | head -20
+res  /tmp/rt-cc-g7r5r3m9/t3/test_report.py
+call Read   /tmp/rt-cc-g7r5r3m9/t3/test_report.py
+res  1	from report import daily_total, weekly_total, monthly_total ⏎ 2	ROWS=[{"kind":"daily","amount":1},{"kind":"weekly","am
+call Write  /tmp/rt-cc-g7r5r3m9/t3/report.py
+res  The file /tmp/rt-cc-g7r5r3m9/t3/report.py has been updated successfully. (file state is current in your context — no nee
+call Bash   python3 -m pytest -q test_report.py
+res  ...                                                                      [100%] ⏎ 3 passed in 0.00s

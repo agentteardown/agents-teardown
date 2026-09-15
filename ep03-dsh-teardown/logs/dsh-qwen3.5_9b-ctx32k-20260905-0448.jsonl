@@ -1,0 +1,1 @@
+{"model": "qwen3.5:9b-ctx32k", "harness": "dsh", "id": "t5", "ok": false, "why": "t5: ответ не начинается с ASK; t5: конфликт версий не назван", "sec": 902.3, "rc": -1, "reply": "<TIMEOUT 900s>", "stderr_tail": "", "dir": "/tmp/rt-wa57lc01/t5"}

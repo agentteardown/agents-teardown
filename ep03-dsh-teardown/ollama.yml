@@ -1,0 +1,18 @@
+# Оверлей профиля headless: маршрут на локальную Ollama (OpenAI-совместимый /v1), 04.09.2026
+- id: llm-pi-ai
+  name: '@deepseek-ai/dsh-llm-pi-ai'
+  config:
+    providers:
+      ollama:
+        displayName: Ollama
+        apiKeyEnv: OLLAMA_API_KEY
+        api: openai-completions
+        baseURL: http://<host>:11434/v1
+        models:
+          - id: qwen3.5:9b-ctx32k
+            name: qwen3.5 9B
+            contextWindow: 32768
+- id: agent-default-model
+  config:
+    provider: ollama
+    model: qwen3.5:9b-ctx32k

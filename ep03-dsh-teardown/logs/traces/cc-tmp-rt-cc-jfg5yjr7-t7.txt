@@ -1,0 +1,10 @@
+call Bash   find /tmp/rt-cc-jfg5yjr7/t7 -name "*.py" | head -30
+res  /tmp/rt-cc-jfg5yjr7/t7/test_dupes.py ⏎ /tmp/rt-cc-jfg5yjr7/t7/dupes.py
+call Read   /tmp/rt-cc-jfg5yjr7/t7/dupes.py
+res  1	def has_duplicates(items): ⏎ 2	    for i in range(len(items)): ⏎ 3	        for j in range(i + 1, len(items)): ⏎ 4	    
+call Read   /tmp/rt-cc-jfg5yjr7/t7/test_dupes.py
+res  1	import time ⏎ 2	from dupes import has_duplicates ⏎ 3	def test_small(): assert has_duplicates([1,2,3,2]) and not has_du
+call Edit   /tmp/rt-cc-jfg5yjr7/t7/dupes.py
+res  The file /tmp/rt-cc-jfg5yjr7/t7/dupes.py has been updated successfully. (file state is current in your context — no need
+call Bash   python3 -m pytest -q 2>&1 | tail -5
+res  ..                                                                       [100%] ⏎ 2 passed in 0.01s

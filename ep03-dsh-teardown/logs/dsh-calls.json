@@ -1,0 +1,484 @@
+{
+ "/tmp/rt-23jmr0z4/t1": {
+  "id": "t1",
+  "ok": true,
+  "sessions": 1,
+  "calls": 6,
+  "errors": 0,
+  "err_kinds": {},
+  "tools": {
+   "bash": 3,
+   "read": 2,
+   "edit": 1
+  },
+  "tool_err": {},
+  "steps": 7,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-2i26eb6z/t2": {
+  "id": "t2",
+  "ok": false,
+  "sessions": 1,
+  "calls": 8,
+  "errors": 2,
+  "err_kinds": {
+   "exec/other": 2
+  },
+  "tools": {
+   "bash": 1,
+   "read": 2,
+   "str_replace_editor": 4,
+   "write": 1
+  },
+  "tool_err": {
+   "str_replace_editor": 2
+  },
+  "steps": 9,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-gjjbz1hc/t3": {
+  "id": "t3",
+  "ok": true,
+  "sessions": 1,
+  "calls": 6,
+  "errors": 1,
+  "err_kinds": {
+   "invalid arguments": 1
+  },
+  "tools": {
+   "read": 2,
+   "glob": 1,
+   "str_replace_editor": 2,
+   "bash": 1
+  },
+  "tool_err": {
+   "str_replace_editor": 1
+  },
+  "steps": 7,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-x69sfmaw/t4": {
+  "id": "t4",
+  "ok": true,
+  "sessions": 1,
+  "calls": 6,
+  "errors": 1,
+  "err_kinds": {
+   "invalid arguments": 1
+  },
+  "tools": {
+   "read": 2,
+   "str_replace_editor": 3,
+   "bash": 1
+  },
+  "tool_err": {
+   "str_replace_editor": 1
+  },
+  "steps": 6,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-wa57lc01/t5": {
+  "id": "t5",
+  "ok": false,
+  "sessions": 1,
+  "calls": 1,
+  "errors": 0,
+  "err_kinds": {},
+  "tools": {
+   "bash": 1
+  },
+  "tool_err": {},
+  "steps": 1,
+  "end": []
+ },
+ "/tmp/rt-hi1e_76u/t7": {
+  "id": "t7",
+  "ok": true,
+  "sessions": 1,
+  "calls": 6,
+  "errors": 0,
+  "err_kinds": {},
+  "tools": {
+   "bash": 3,
+   "read": 2,
+   "str_replace_editor": 1
+  },
+  "tool_err": {},
+  "steps": 7,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-ir_j0yn5/t2": {
+  "id": "t2",
+  "ok": false,
+  "sessions": 1,
+  "calls": 81,
+  "errors": 7,
+  "err_kinds": {
+   "invalid arguments": 6,
+   "exec/other": 1
+  },
+  "tools": {
+   "glob": 1,
+   "read": 2,
+   "bash": 68,
+   "str_replace_editor": 5,
+   "write": 1,
+   "subagent": 4
+  },
+  "tool_err": {
+   "str_replace_editor": 4,
+   "write": 1,
+   "subagent": 2
+  },
+  "steps": 80,
+  "end": []
+ },
+ "/tmp/rt-rt22vyoe/t3": {
+  "id": "t3",
+  "ok": true,
+  "sessions": 1,
+  "calls": 3,
+  "errors": 0,
+  "err_kinds": {},
+  "tools": {
+   "read": 1,
+   "str_replace_editor": 1,
+   "bash": 1
+  },
+  "tool_err": {},
+  "steps": 4,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-tn7jkcia/t4": {
+  "id": "t4",
+  "ok": false,
+  "sessions": 1,
+  "calls": 3,
+  "errors": 1,
+  "err_kinds": {
+   "unknown tool": 1
+  },
+  "tools": {
+   "read": 2,
+   "str_replace": 1
+  },
+  "tool_err": {
+   "str_replace": 1
+  },
+  "steps": 3,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-hr_5lqhq/t5": {
+  "id": "t5",
+  "ok": false,
+  "sessions": 1,
+  "calls": 4,
+  "errors": 0,
+  "err_kinds": {},
+  "tools": {
+   "bash": 2,
+   "read": 2
+  },
+  "tool_err": {},
+  "steps": 4,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-pu_8ff_d/t6": {
+  "id": "t6",
+  "ok": true,
+  "sessions": 1,
+  "calls": 16,
+  "errors": 6,
+  "err_kinds": {
+   "unknown tool": 1,
+   "invalid arguments": 5
+  },
+  "tools": {
+   "read": 3,
+   "str_replace": 1,
+   "edit": 4,
+   "str_replace_editor": 1,
+   "bash": 4,
+   "write": 3
+  },
+  "tool_err": {
+   "str_replace": 1,
+   "edit": 4,
+   "str_replace_editor": 1
+  },
+  "steps": 17,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-ltbfeqoz/t7": {
+  "id": "t7",
+  "ok": true,
+  "sessions": 1,
+  "calls": 12,
+  "errors": 3,
+  "err_kinds": {
+   "exec/other": 3
+  },
+  "tools": {
+   "bash": 7,
+   "read": 2,
+   "write": 3
+  },
+  "tool_err": {
+   "write": 3
+  },
+  "steps": 12,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-zl2rb5zs/t1": {
+  "id": "t1",
+  "ok": true,
+  "sessions": 1,
+  "calls": 8,
+  "errors": 2,
+  "err_kinds": {
+   "invalid arguments": 2
+  },
+  "tools": {
+   "bash": 4,
+   "edit": 2,
+   "read": 1,
+   "str_replace_editor": 1
+  },
+  "tool_err": {
+   "edit": 2
+  },
+  "steps": 9,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-fvxn6g1w/t2": {
+  "id": "t2",
+  "ok": false,
+  "sessions": 1,
+  "calls": 9,
+  "errors": 1,
+  "err_kinds": {
+   "exec/other": 1
+  },
+  "tools": {
+   "bash": 2,
+   "read": 2,
+   "str_replace_editor": 4,
+   "write": 1
+  },
+  "tool_err": {
+   "str_replace_editor": 1
+  },
+  "steps": 9,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-gaz16fm4/t3": {
+  "id": "t3",
+  "ok": false,
+  "sessions": 1,
+  "calls": 16,
+  "errors": 3,
+  "err_kinds": {
+   "invalid arguments": 1,
+   "exec/other": 2
+  },
+  "tools": {
+   "read": 3,
+   "bash": 9,
+   "edit": 1,
+   "str_replace_editor": 1,
+   "write": 2
+  },
+  "tool_err": {
+   "edit": 1,
+   "write": 2
+  },
+  "steps": 16,
+  "end": []
+ },
+ "/tmp/rt-3l62t8o1/t4": {
+  "id": "t4",
+  "ok": true,
+  "sessions": 1,
+  "calls": 14,
+  "errors": 4,
+  "err_kinds": {
+   "exec/other": 1,
+   "invalid arguments": 3
+  },
+  "tools": {
+   "glob": 2,
+   "read": 3,
+   "str_replace_editor": 2,
+   "bash": 5,
+   "write": 2
+  },
+  "tool_err": {
+   "str_replace_editor": 2,
+   "bash": 2
+  },
+  "steps": 14,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-5w_es83w/t5": {
+  "id": "t5",
+  "ok": false,
+  "sessions": 1,
+  "calls": 0,
+  "errors": 0,
+  "err_kinds": {},
+  "tools": {},
+  "tool_err": {},
+  "steps": 1,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-2hct_acg/t6": {
+  "id": "t6",
+  "ok": true,
+  "sessions": 1,
+  "calls": 3,
+  "errors": 0,
+  "err_kinds": {},
+  "tools": {
+   "read": 1,
+   "edit": 1,
+   "bash": 1
+  },
+  "tool_err": {},
+  "steps": 4,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-xghi545m/t7": {
+  "id": "t7",
+  "ok": true,
+  "sessions": 1,
+  "calls": 9,
+  "errors": 1,
+  "err_kinds": {
+   "invalid arguments": 1
+  },
+  "tools": {
+   "bash": 4,
+   "read": 2,
+   "edit": 1,
+   "str_replace_editor": 2
+  },
+  "tool_err": {
+   "edit": 1
+  },
+  "steps": 10,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-cxov09wj/t6": {
+  "id": "t6",
+  "ok": true,
+  "sessions": 1,
+  "calls": 5,
+  "errors": 2,
+  "err_kinds": {
+   "invalid arguments": 2
+  },
+  "tools": {
+   "read": 1,
+   "edit": 2,
+   "write": 1,
+   "bash": 1
+  },
+  "tool_err": {
+   "edit": 2
+  },
+  "steps": 6,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-gsbpy0x_/t1": {
+  "id": "t1",
+  "ok": true,
+  "sessions": 1,
+  "calls": 5,
+  "errors": 0,
+  "err_kinds": {},
+  "tools": {
+   "bash": 2,
+   "read": 2,
+   "edit": 1
+  },
+  "tool_err": {},
+  "steps": 6,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-4f77bo3u/t6": {
+  "id": "t6",
+  "ok": false,
+  "sessions": 1,
+  "calls": 1,
+  "errors": 0,
+  "err_kinds": {},
+  "tools": {
+   "read": 1
+  },
+  "tool_err": {},
+  "steps": 2,
+  "end": [
+   "completed"
+  ]
+ },
+ "/tmp/rt-0y6y_wzz/t1": {
+  "id": "t1",
+  "ok": true,
+  "sessions": 1,
+  "calls": 8,
+  "errors": 1,
+  "err_kinds": {
+   "invalid arguments": 1
+  },
+  "tools": {
+   "bash": 3,
+   "web_fetch": 1,
+   "glob": 1,
+   "read": 2,
+   "edit": 1
+  },
+  "tool_err": {
+   "web_fetch": 1
+  },
+  "steps": 8,
+  "end": [
+   "completed"
+  ]
+ }
+}

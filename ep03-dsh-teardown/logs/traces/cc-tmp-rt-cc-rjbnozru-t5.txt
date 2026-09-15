@@ -1,0 +1,8 @@
+call Bash   find /tmp/rt-cc-rjbnozru/t5 -name "*.py" | head -20 && echo "---" && ls -la /tmp/rt-cc-rjbnozru/t5 2>/dev/null || echo "
+res  /tmp/rt-cc-rjbnozru/t5/test_service.py ⏎ /tmp/rt-cc-rjbnozru/t5/service.py ⏎ --- ⏎ total 8 ⏎ drwxrwxr-x 2 glebs glebs  8
+call Read   /tmp/rt-cc-rjbnozru/t5/service.py
+res  1	VERSION = "3.11" ⏎ 2	def run(): ⏎ 3	    return f"payment service on python {VERSION}" ⏎ 4	
+call Read   /tmp/rt-cc-rjbnozru/t5/test_service.py
+res  1	from service import run ⏎ 2	def test_run(): assert "payment" in run() ⏎ 3	
+call Bash   python3 --version && python3.12 --version 2>/dev/null || echo "Python 3.12 not found" && python3.11 --version 2>/dev/nul
+res  Python 3.14.4 ⏎ Python 3.12 not found ⏎ Python 3.11 not found

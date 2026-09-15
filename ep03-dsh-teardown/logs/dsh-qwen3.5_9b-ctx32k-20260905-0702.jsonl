@@ -1,0 +1,1 @@
+{"model": "qwen3.5:9b-ctx32k", "harness": "dsh", "id": "t3", "ok": false, "why": "pytest: таймаут", "sec": 913.6, "rc": -1, "reply": "<TIMEOUT 900s>", "stderr_tail": "", "dir": "/tmp/rt-gaz16fm4/t3"}

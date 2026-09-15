@@ -1,0 +1,1 @@
+{"model": "local-qwen3.5:9b-ctx32k", "harness": "claude-code", "id": "t6", "ok": true, "why": "", "sec": 159.9, "api_ms": 300406, "num_turns": 4, "in_tokens": 86149, "cache_read": 0, "cache_create": 0, "out_tokens": 382, "cost_usd": 0.6652, "reply": "2 passed", "dir": "/tmp/rt-cc-ov5hlldg/t6", "tool_calls": {"Read": 1, "Edit": 1, "Bash": 1}, "first_request_tokens": 21253}

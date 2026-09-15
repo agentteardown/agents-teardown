@@ -1,0 +1,14 @@
+call Read   /tmp/rt-cc-wjbpxwbr/t7/test_fast.py
+ERR  File does not exist. Note: your current working directory is /tmp/rt-cc-wjbpxwbr/t7.
+call Bash   ls -la /tmp/rt-cc-wjbpxwbr/t7/
+res  total 8 ⏎ drwxrwxr-x 2 glebs glebs  80 Sep  5 06:05 . ⏎ drwx------ 9 glebs glebs 200 Sep  5 06:05 .. ⏎ -rw-rw-r-- 1 gleb
+call Read   /tmp/rt-cc-wjbpxwbr/t7/dupes.py
+res  1	def has_duplicates(items): ⏎ 2	    for i in range(len(items)): ⏎ 3	        for j in range(i + 1, len(items)): ⏎ 4	    
+call Read   /tmp/rt-cc-wjbpxwbr/t7/test_dupes.py
+res  1	import time ⏎ 2	from dupes import has_duplicates ⏎ 3	def test_small(): assert has_duplicates([1,2,3,2]) and not has_du
+call Bash   python3 -m pytest test_dupes.py::test_fast -v 2>&1 | tail -50
+res  ============================= test session starts ============================== ⏎ platform linux -- Python 3.14.4, pyte
+call Edit   /tmp/rt-cc-wjbpxwbr/t7/dupes.py
+res  The file /tmp/rt-cc-wjbpxwbr/t7/dupes.py has been updated successfully. (file state is current in your context — no need
+call Bash   python3 -m pytest test_dupes.py::test_fast -v && python3 -m pytest -q 2>&1 | tail -50
+res  ============================= test session starts ============================== ⏎ platform linux -- Python 3.14.4, pyte

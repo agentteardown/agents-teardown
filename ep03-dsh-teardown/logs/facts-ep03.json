@@ -1,0 +1,466 @@
+{
+ "tasks": {
+  "t1": "bug in calc.py + tests",
+  "t2": "slugify to spec",
+  "t3": "refactor report.py (AST ≤75, was 99)",
+  "t4": "--chars flag in cli.py + README",
+  "t5": "contradictory ticket → ASK",
+  "t6": "hard-coded secret → env",
+  "t7": "has_duplicates O(n²) → fast"
+ },
+ "per_task": {
+  "t1": {
+   "dsh": {
+    "pass": 3,
+    "n": 3,
+    "sec_median": 78,
+    "wh_median": 2.8,
+    "why": [],
+    "calls_sum": 22,
+    "errors_sum": 3,
+    "calls_max": 8,
+    "steps_sum": 24
+   },
+   "cc": {
+    "pass": 3,
+    "n": 3,
+    "sec_median": 121,
+    "wh_median": 4.7,
+    "why": [],
+    "turns_median": 7,
+    "in_tokens_median_k": 153,
+    "in_tokens_max_k": 154,
+    "calls_sum": 17,
+    "errors_sum": 1,
+    "runs_with_logs": 3,
+    "calls_max": 6,
+    "not_found_sum": 0
+   }
+  },
+  "t2": {
+   "dsh": {
+    "pass": 0,
+    "n": 3,
+    "sec_median": 146,
+    "wh_median": 5.3,
+    "why": [
+     "pytest: 2 errors in 0.24s (ожидалось 6 passed, 0 прочих)",
+     "изменены защищённые файлы: test_slug.py; pytest: 3 failed, 3 passed in 0.02s (ожидалось 6 passed, 0 прочих)",
+     "pytest: 2 errors in 0.37s (ожидалось 6 passed, 0 прочих)"
+    ],
+    "calls_sum": 98,
+    "errors_sum": 10,
+    "calls_max": 81,
+    "steps_sum": 98
+   },
+   "cc": {
+    "pass": 1,
+    "n": 3,
+    "sec_median": 337,
+    "wh_median": 12.8,
+    "why": [
+     "pytest: 6 failed in 0.02s (ожидалось 6 passed, 0 прочих)",
+     "pytest: 2 errors in 0.13s (ожидалось 6 passed, 0 прочих)"
+    ],
+    "turns_median": 33,
+    "in_tokens_median_k": 978,
+    "in_tokens_max_k": 1230,
+    "calls_sum": 81,
+    "errors_sum": 13,
+    "runs_with_logs": 3,
+    "calls_max": 35,
+    "not_found_sum": 6
+   }
+  },
+  "t3": {
+   "dsh": {
+    "pass": 2,
+    "n": 3,
+    "sec_median": 76,
+    "wh_median": 3.0,
+    "why": [
+     "pytest: таймаут"
+    ],
+    "calls_sum": 25,
+    "errors_sum": 4,
+    "calls_max": 16,
+    "steps_sum": 27
+   },
+   "cc": {
+    "pass": 3,
+    "n": 3,
+    "sec_median": 307,
+    "wh_median": 11.9,
+    "why": [],
+    "turns_median": 6,
+    "in_tokens_median_k": 131,
+    "in_tokens_max_k": 299,
+    "calls_sum": 21,
+    "errors_sum": 1,
+    "runs_with_logs": 3,
+    "calls_max": 12,
+    "not_found_sum": 0
+   }
+  },
+  "t4": {
+   "dsh": {
+    "pass": 2,
+    "n": 3,
+    "sec_median": 118,
+    "wh_median": 3.6,
+    "why": [
+     "pytest: 3 failed, 1 passed in 0.12s (ожидалось 4 passed, 0 прочих)"
+    ],
+    "calls_sum": 23,
+    "errors_sum": 6,
+    "calls_max": 14,
+    "steps_sum": 23
+   },
+   "cc": {
+    "pass": 1,
+    "n": 3,
+    "sec_median": 340,
+    "wh_median": 13.6,
+    "why": [
+     "pytest: 4 failed in 0.32s (ожидалось 4 passed, 0 прочих)",
+     "pytest: 4 failed in 0.39s (ожидалось 4 passed, 0 прочих)"
+    ],
+    "turns_median": 40,
+    "in_tokens_median_k": 1272,
+    "in_tokens_max_k": 1358,
+    "calls_sum": 115,
+    "errors_sum": 17,
+    "runs_with_logs": 3,
+    "calls_max": 44,
+    "not_found_sum": 8
+   }
+  },
+  "t5": {
+   "dsh": {
+    "pass": 0,
+    "n": 3,
+    "sec_median": 71,
+    "wh_median": 2.8,
+    "why": [
+     "t5: ответ не начинается с ASK; t5: конфликт версий не назван",
+     "t5: ответ не начинается с ASK; t5: конфликт версий не назван",
+     "t5: ответ не начинается с ASK"
+    ],
+    "calls_sum": 5,
+    "errors_sum": 0,
+    "calls_max": 4,
+    "steps_sum": 6
+   },
+   "cc": {
+    "pass": 0,
+    "n": 3,
+    "sec_median": 201,
+    "wh_median": 7.9,
+    "why": [
+     "t5: ответ не начинается с ASK",
+     "t5: ответ не начинается с ASK",
+     "t5: ответ не начинается с ASK"
+    ],
+    "turns_median": 4,
+    "in_tokens_median_k": 87,
+    "in_tokens_max_k": 109,
+    "calls_sum": 7,
+    "errors_sum": 0,
+    "runs_with_logs": 3,
+    "calls_max": 4,
+    "not_found_sum": 0
+   }
+  },
+  "t6": {
+   "dsh": {
+    "pass": 2,
+    "n": 3,
+    "sec_median": 77,
+    "wh_median": 2.9,
+    "why": [
+     "pytest: 3 failed in 0.02s (ожидалось 3 passed, 0 прочих)"
+    ],
+    "calls_sum": 20,
+    "errors_sum": 6,
+    "calls_max": 16,
+    "steps_sum": 23
+   },
+   "cc": {
+    "pass": 3,
+    "n": 3,
+    "sec_median": 146,
+    "wh_median": 5.8,
+    "why": [],
+    "turns_median": 4,
+    "in_tokens_median_k": 86,
+    "in_tokens_max_k": 108,
+    "calls_sum": 10,
+    "errors_sum": 0,
+    "runs_with_logs": 3,
+    "calls_max": 4,
+    "not_found_sum": 0
+   }
+  },
+  "t7": {
+   "dsh": {
+    "pass": 3,
+    "n": 3,
+    "sec_median": 100,
+    "wh_median": 3.5,
+    "why": [],
+    "calls_sum": 27,
+    "errors_sum": 4,
+    "calls_max": 12,
+    "steps_sum": 29
+   },
+   "cc": {
+    "pass": 3,
+    "n": 3,
+    "sec_median": 242,
+    "wh_median": 9.4,
+    "why": [],
+    "turns_median": 8,
+    "in_tokens_median_k": 176,
+    "in_tokens_max_k": 177,
+    "calls_sum": 20,
+    "errors_sum": 1,
+    "runs_with_logs": 3,
+    "calls_max": 8,
+    "not_found_sum": 0
+   }
+  }
+ },
+ "totals": {
+  "dsh": {
+   "passed": 12,
+   "n": 21,
+   "pct": 57,
+   "min_total": 72,
+   "wh_total": 135,
+   "sec_per_pass": 362,
+   "wh_per_pass": 11.2,
+   "sec_per_task": 207,
+   "wh_per_task": 6.4,
+   "calls": 220,
+   "errors": 33,
+   "steps": 230,
+   "err_kinds": {
+    "exec/other": 10,
+    "invalid arguments": 21,
+    "unknown tool": 2
+   },
+   "tools": {
+    "bash": 120,
+    "read": 37,
+    "edit": 11,
+    "str_replace_editor": 27,
+    "write": 13,
+    "glob": 5,
+    "subagent": 4,
+    "str_replace": 2,
+    "web_fetch": 1
+   },
+   "tool_err": {
+    "str_replace_editor": 12,
+    "write": 6,
+    "subagent": 2,
+    "str_replace": 2,
+    "edit": 8,
+    "bash": 2,
+    "web_fetch": 1
+   },
+   "first_request_tokens": 7988,
+   "runs": 21,
+   "mean_w": 103,
+   "segments": 21
+  },
+  "cc": {
+   "passed": 14,
+   "n": 21,
+   "pct": 67,
+   "min_total": 95,
+   "wh_total": 225,
+   "sec_per_pass": 405,
+   "wh_per_pass": 16.1,
+   "sec_per_task": 270,
+   "wh_per_task": 10.7,
+   "calls": 271,
+   "errors": 33,
+   "turns": 294,
+   "in_tokens_M": 8.0,
+   "out_tokens_k": 50,
+   "first_request_tokens": 21241,
+   "runs_with_logs": 21,
+   "mean_w": 143,
+   "segments": 21
+  }
+ },
+ "cloud": {
+  "sonnet": {
+   "passed": 7,
+   "n": 7,
+   "calls": 36,
+   "turns": 43,
+   "cost_usd": 0.63,
+   "in_tokens_k": 1176
+  },
+  "haiku": {
+   "passed": 7,
+   "n": 7,
+   "calls": 31,
+   "turns": 38,
+   "cost_usd": 0.24,
+   "in_tokens_k": 737
+  }
+ },
+ "derived": {
+  "model": "qwen3.5:9b-ctx32k",
+  "model_params": "9.7B",
+  "dsh_version": "0.1.2-rc.1",
+  "runs_per_task": 3,
+  "tasks_n": 7,
+  "harnesses": 2,
+  "runs_total": 21,
+  "idle_w": 27,
+  "peak_w": 177,
+  "ctx_tokens": 32768,
+  "ctx_k": 32,
+  "first_request_ratio": 2.7,
+  "wh_ratio_per_pass": 1.4,
+  "sec_ratio_per_pass": 1.12,
+  "dsh_t6_example": {
+   "calls": 16,
+   "errors": 6,
+   "wrong_field_names": 5,
+   "unknown_tool": 1
+  },
+  "cc_t4_example": {
+   "calls": 38,
+   "by_tool": {
+    "Read": 15,
+    "Edit": 15,
+    "Write": 7,
+    "Bash": 1
+   },
+   "errors": 9,
+   "not_found": 8,
+   "first_pytest_call": null
+  },
+  "dsh_t3_timeout_sec": 913,
+  "t5_fail_total": 6,
+  "t5_fail_dsh": 3,
+  "t5_fail_cc": 3,
+  "pass_diff": 2,
+  "ollama_port": 11434,
+  "ollama_version": "0.32.1",
+  "dsh_t2_run2": {
+   "calls": 81,
+   "bash": 68,
+   "subagent": 4,
+   "errors": 7,
+   "steps": 80
+  },
+  "dsh_t1_clean_run": {
+   "calls": 6,
+   "errors": 0
+  },
+  "recheck_0406": {
+   "dsh_t3": [
+    1,
+    2
+   ],
+   "cc_t3": [
+    2,
+    2
+   ],
+   "t5_all": [
+    0,
+    4
+   ],
+   "note": "повторы t3/t5 по 2 в каждой обвязке, logs/recheck.out"
+  },
+  "mean_w": {
+   "dsh": 103,
+   "cc": 143
+  },
+  "t5_replies": {
+   "dsh": [
+    "<TIMEOUT 900s>",
+    "",
+    "This ticket contains a contradiction: it asks me to \"upgrade the payment service to Python"
+   ],
+   "cc": [
+    "I see there's no \"SDK\" in the traditional sense here - just a simple `service.py` with VER",
+    "The current `VERSION` variable is set to `\"3.11\"` but this seems to be just metadata (a st",
+    "I notice the ticket contains a contradiction: it asks to \"upgrade the payment service to P"
+   ]
+  },
+  "str_replace_editor": {
+   "calls": 27,
+   "errors": 12
+  },
+  "power_sample_s": 1,
+  "seconds_per_hour": 3600,
+  "timeout_s": 900,
+  "calls_per_run": {
+   "dsh": 10.5,
+   "cc": 12.9
+  },
+  "errors_invalid_args": 21,
+  "errors_shell": 10,
+  "errors_unknown_tool": 2
+ },
+ "meta": {
+  "date": "2026-09-05",
+  "stamp": "20260905-0440",
+  "logs": [
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0526.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0528.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0537.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0547.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0552.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0602.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0605.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0632.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0634.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0635.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0640.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0645.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0646.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0648.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0931.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0933.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0939.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0943.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0953.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-0956.jsonl",
+   "cc-repo-local-qwen3.5_9b-ctx32k-20260905-100025.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0440.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0442.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0444.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0445.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0448.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0513.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0524.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0526.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0609.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0624.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0625.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0627.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0628.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0630.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0658.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0659.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0702.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0925.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0927.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0928.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-0930.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-095945.jsonl",
+   "dsh-qwen3.5_9b-ctx32k-20260905-153448.jsonl",
+   "main-20260905-0440.out",
+   "power-20260905-0440.csv",
+   "dsh-calls.json"
+  ]
+ }
+}

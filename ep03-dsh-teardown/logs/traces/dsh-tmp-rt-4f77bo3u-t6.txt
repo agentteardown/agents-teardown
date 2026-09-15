@@ -1,0 +1,3 @@
+  call read         {"file_path":"/tmp/rt-4f77bo3u/t6/client.py"}
+  res  <path>/tmp/rt-4f77bo3u/t6/client.py</path> ⏎ <type>file</type> ⏎ <content> ⏎ 1: import os ⏎ 2: API_KEY = "sk-l
+  END {"turn": 1, "reason": {"kind": "completed"}}

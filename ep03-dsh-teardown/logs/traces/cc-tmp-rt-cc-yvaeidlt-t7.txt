@@ -1,0 +1,16 @@
+call Bash   python3 -m pytest --collect-only 2>/dev/null | grep -E "test_fast|has_duplicates" || echo "--- collection done ---"
+res      <Function test_fast>
+call Bash   git log -1 --oneline 2>/dev/null || pwd && ls *.py 2>/dev/null | head -5
+res  /tmp/rt-cc-yvaeidlt/t7 ⏎ dupes.py ⏎ test_dupes.py
+call Read   /tmp/rt-cc-yvaeidlt/t7/dupes.py
+res  1	def has_duplicates(items): ⏎ 2	    for i in range(len(items)): ⏎ 3	        for j in range(i + 1, len(items)): ⏎ 4	    
+call Read   /tmp/rt-cc-yvaeidlt/t7/test_dupes.py
+res  1	import time ⏎ 2	from dupes import has_duplicates ⏎ 3	def test_small(): assert has_duplicates([1,2,3,2]) and not has_du
+call Bash   python3 -m pytest test_dupes.py::test_fast -v 2>&1 | head -50 || echo "timeout or failed"
+res  ============================= test session starts ============================== ⏎ platform linux -- Python 3.14.4, pyte
+call Edit   /tmp/rt-cc-yvaeidlt/t7/dupes.py
+res  The file /tmp/rt-cc-yvaeidlt/t7/dupes.py has been updated successfully. (file state is current in your context — no need
+call Bash   python3 -m pytest test_dupes.py::test_small test_dupes.py::test_fast -v
+res  ============================= test session starts ============================== ⏎ platform linux -- Python 3.14.4, pyte
+call Bash   python3 -m pytest -q
+res  ..                                                                       [100%] ⏎ 2 passed in 0.01s

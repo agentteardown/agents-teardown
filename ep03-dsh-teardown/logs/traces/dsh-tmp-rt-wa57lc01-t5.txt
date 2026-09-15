@@ -1,0 +1,1 @@
+  call bash         {"command":"ls -la /tmp/rt-wa57lc01/t5/app/paymentservice","description":"List payment service directory struc
