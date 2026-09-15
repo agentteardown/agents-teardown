@@ -1,0 +1,6 @@
+call Bash   find . -type f -not -path '*/.git/*' | head -50 && echo "---" && python3 -m pytest -q 2>&1 | tail -40
+res  ./test_calc.py ⏎ ./calc.py ⏎ --- ⏎ F.                                                                       [100%] ⏎ ===
+call Bash   cat calc.py; echo "---"; cat test_calc.py
+res  def add(a, b): ⏎     return a - b ⏎  ⏎ def mul(a, b): ⏎     return a * b ⏎ --- ⏎ from calc import add, mul ⏎ def test_ad
+call Bash   sed -i 's/    return a - b/    return a + b/' calc.py && cat calc.py && echo "---" && python3 -m pytest -q 2>&1 | tail -
+res  def add(a, b): ⏎     return a + b ⏎  ⏎ def mul(a, b): ⏎     return a * b ⏎ --- ⏎ ..                                     

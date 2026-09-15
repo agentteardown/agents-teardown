@@ -1,0 +1,1 @@
+{"model": "qwen3.5:9b-ctx32k", "harness": "opencode", "id": "t1", "ok": true, "why": "", "sec": 91.9, "rc": 0, "reply": "", "stderr_tail": "", "dir": "/tmp/rt-oc-l1gjtqh4/t1", "events": "<home>/llm-bench/logs/opencode-events/tmp-rt-oc-l1gjtqh4-t1.jsonl", "calls": 8, "errors": 0}

@@ -1,0 +1,1 @@
+{"model": "qwen3.5:9b-ctx64k", "harness": "hermes", "id": "t1", "ok": false, "why": "pytest: 2 failed, 1 passed in 0.02s (ожидалось 3 passed, 0 прочих)", "sec": 900.5, "rc": 124, "reply": "<TIMEOUT 900s>", "usage_and_stderr": "\n", "dir": "/tmp/rt-hm-yj6jjtb2/t1.back", "remote": "~/rt/rt-hm-yj6jjtb2/t1"}

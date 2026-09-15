@@ -1,0 +1,9 @@
+call Bash   ls -la && echo "=== report.py ===" && cat -n report.py && echo "=== tests ===" && cat -n test_report.py 2>/dev/null || c
+res  total 8 ⏎ drwxrwxr-x 2 glebs glebs  80 Sep  9 09:07 . ⏎ drwx------ 9 glebs glebs 200 Sep  9 09:07 .. ⏎ -rw-rw-r-- 1 gleb
+call Bash   cat > report.py <<'EOF'
+def _total_by_kind(rows, kind):
+    total = 0
+    for r in rows:
+        if r["kind"] == kind:
+ 
+res       1	def _total_by_kind(rows, kind): ⏎      2	    total = 0 ⏎      3	    for r in rows: ⏎      4	        if r["kind"] 

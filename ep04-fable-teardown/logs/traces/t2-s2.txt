@@ -1,0 +1,10 @@
+call Bash   ls -la && echo "--- slug.py ---" && cat slug.py && echo "--- tests ---" && for f in test*.py tests/*.py; do [ -f "$f" ] 
+res  total 8 ⏎ drwxrwxr-x 2 glebs glebs  80 Sep  9 09:07 . ⏎ drwx------ 9 glebs glebs 200 Sep  9 09:07 .. ⏎ -rw-rw-r-- 1 gleb
+call Bash   cat > slug.py <<'EOF'
+import re
+import unicodedata
+
+
+def slugify(title: str) -> str:
+    """Turn a title into a URL slug
+res  ....                                                                     [100%] ⏎ 4 passed in 0.01s

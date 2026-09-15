@@ -1,0 +1,8 @@
+call Bash   find . -type f -not -path '*/.git/*' -not -path '*/__pycache__/*' -not -path '*/.pytest_cache/*' | head -50 && echo "---
+ERR  Exit code 5 ⏎ ./test_dupes.py ⏎ ./dupes.py ⏎ ----- ⏎ === ./test_dupes.py === ⏎ import time ⏎ from dupes import has_dupli
+call Bash   cat > dupes.py <<'EOF'
+def has_duplicates(items):
+    """Return True if any value appears more than once in ``items``.
+
+
+res  ..                                                                       [100%] ⏎ 2 passed in 0.01s

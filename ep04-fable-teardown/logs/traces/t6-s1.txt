@@ -1,0 +1,11 @@
+call Bash   ls -la && echo '--- client.py ---' && cat -n client.py && echo '--- tests ---' && find . -name '*test*' -not -path './.g
+res  total 8 ⏎ drwxrwxr-x 2 glebs glebs  80 Sep  9 09:05 . ⏎ drwx------ 9 glebs glebs 200 Sep  9 09:05 .. ⏎ -rw-rw-r-- 1 gleb
+call Bash   cat > client.py <<'EOF'
+import os
+
+
+def get_api_key():
+    key = os.environ.get("API_KEY")
+    if not key:
+        raise
+res       1	import os ⏎      2	 ⏎      3	 ⏎      4	def get_api_key(): ⏎      5	    key = os.environ.get("API_KEY") ⏎      6	 

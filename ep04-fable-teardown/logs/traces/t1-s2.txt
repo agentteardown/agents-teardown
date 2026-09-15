@@ -1,0 +1,6 @@
+call Bash   find . -type f -not -path '*/__pycache__/*' -not -path '*/.pytest_cache/*' | head -50 && echo "---" && python3 -m pytest
+res  ./test_calc.py ⏎ ./calc.py ⏎ --- ⏎ F.                                                                       [100%] ⏎ ===
+call Bash   cat -n calc.py; echo "---"; cat -n test_calc.py
+res       1	def add(a, b): ⏎      2	    return a - b ⏎      3	 ⏎      4	def mul(a, b): ⏎      5	    return a * b ⏎ --- ⏎     
+call Bash   sed -i 's/return a - b/return a + b/' calc.py && cat -n calc.py && echo "---" && python3 -m pytest -q 2>&1 | tail -5
+res       1	def add(a, b): ⏎      2	    return a + b ⏎      3	 ⏎      4	def mul(a, b): ⏎      5	    return a * b ⏎ --- ⏎ ..  

@@ -1,0 +1,11 @@
+START 1788936916 09:55:16
+  t1  ok    22.5s turns 4 in 98 'The bug was in `calc.py:2`: `add` returned `a - b` instead o'
+  t2  ok    22.8s turns 3 in 66 '```\n4 passed in 0.01s\n```\n\n`slugify` in slug.py now normaliz'
+  t3  ok    15.6s turns 3 in 66 'Done. `report.py` now has a single private helper, `_total_b'
+  t4  ok    29.6s turns 5 in 130 'Done. `--chars` is now a boolean flag in `cli.py` that print'
+  t5  ok     6.6s turns 1 in 2 'ASK: The ticket asks both to upgrade the payment service to '
+  t6  ok    19.0s turns 3 in 66 '`2 passed in 0.00s`\n\nThe hardcoded key is gone from `client.'
+  t7  ok    20.8s turns 3 in 66 '`has_duplicates` in `dupes.py` now does a single pass with a'
+→ 7/7  claude-fable-5-1  <home>/llm-bench/logs/cc-repo-claude-fable-5-1-20260909-095516.jsonl
+END 1788937055 09:57:35 rc=0
+power samples: 137

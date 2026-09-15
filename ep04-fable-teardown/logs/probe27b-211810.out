@@ -1,0 +1,29 @@
+ollama.exe: <win-home>/AppData/Local/Programs/Ollama/ollama.exe
+ollama version is 0.32.1
+== create
+21:18:10
+verifying conversion [K
+creating new layer sha256:9fd0cf2afcb7af2209bcb83471c033777af9c0b092b4d7134da1311b183f1891 [K
+using existing layer sha256:7b8da8e20aaee66e1472b657bd73221bf6033892968303f85fa935d3bed33300 [K
+writing manifest [K
+success [K[?25h[?2026l
+21:19:12
+== show
+details {'parent_model': '', 'format': 'gguf', 'family': 'qwen35', 'families': ['qwen35'], 'parameter_size': '26.9B', 'quantization_level': 'IQ3_S'}
+{'general.architecture': 'qwen35', 'qwen35.block_count': 64, 'qwen35.context_length': 262144}
+template head: {%- set image_count = namespace(value=0) %} | {%- set video_count = namespace(value=0) %} | {%- macro render_content(content, do_vision_count, is_system_content=false) %} |     {%- if content is string %} |  
+capabilities ['tools', 'thinking', 'completion']
+== generate (load + tok/s)
+21:19:12
+reply: ''
+load_s 6.5 prompt_tok 67 eval_tok 200 tok/s 28.0
+21:19:26
+== ps / vram
+[('qwen3.8-27b-gsq-ctx32k:latest', 12.02, 12.02, 32768)]
+14199 MiB, 16311 MiB
+== tool call test
+tool_calls: [{"id": "wZJSSIogqULGxcxxKd1NGkjaOLH7j5tD", "function": {"index": 0, "name": "get_weather", "arguments": {"city": "Paris"}}}]
+content: ''
+thinking: 'The user wants to know the current weather in Paris using a tool. Let me call get_weather for Paris, France.\n\nWait—there'
+== done
+21:19:33

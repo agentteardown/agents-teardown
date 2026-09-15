@@ -1,0 +1,1967 @@
+{
+ "tasks": {
+  "t1": "bug in calc.py + tests",
+  "t2": "slugify to spec",
+  "t3": "refactor report.py (AST ≤75, was 99)",
+  "t4": "--chars flag in cli.py + README",
+  "t5": "contradictory ticket → ASK",
+  "t6": "hard-coded secret → env",
+  "t7": "has_duplicates O(n²) → fast"
+ },
+ "per_task": {
+  "t1": {
+   "n": 3,
+   "why": [],
+   "sec": [
+    14.6,
+    14.9,
+    16.2
+   ],
+   "sec_median": 14.9,
+   "sec_mean": 15.2,
+   "api_ms": [
+    12676,
+    13603,
+    14264
+   ],
+   "turns": [
+    4,
+    4,
+    4
+   ],
+   "turns_sum": 12,
+   "calls_by_tool": {
+    "Bash": 9
+   },
+   "calls_sum": 9,
+   "in_tokens": [
+    98,
+    98,
+    98
+   ],
+   "cache_read": [
+    69977,
+    70088,
+    70244
+   ],
+   "cache_create": [
+    10723,
+    10808,
+    10947
+   ],
+   "out_tokens": [
+    549,
+    593,
+    644
+   ],
+   "in_tokens_sum": 294,
+   "cache_read_sum": 210309,
+   "cache_create_sum": 32478,
+   "out_tokens_sum": 1786,
+   "cost_usd": [
+    0.26136725,
+    0.26530499999999996,
+    0.27067399999999997
+   ],
+   "cost_sum": 0.7973,
+   "first_request_tokens": [
+    19675
+   ],
+   "dirs": [
+    "/tmp/rt-cc-ksq0at4v/t1",
+    "/tmp/rt-cc-nwatg0rm/t1",
+    "/tmp/rt-cc-o22ckpv7/t1"
+   ],
+   "pass": 3
+  },
+  "t2": {
+   "n": 3,
+   "why": [],
+   "sec": [
+    27.9,
+    19.6,
+    16.4
+   ],
+   "sec_median": 19.6,
+   "sec_mean": 21.3,
+   "api_ms": [
+    26729,
+    18127,
+    15549
+   ],
+   "turns": [
+    3,
+    3,
+    3
+   ],
+   "turns_sum": 9,
+   "calls_by_tool": {
+    "Bash": 6
+   },
+   "calls_sum": 6,
+   "in_tokens": [
+    66,
+    66,
+    66
+   ],
+   "cache_read": [
+    49904,
+    49968,
+    49867
+   ],
+   "cache_create": [
+    11325,
+    11242,
+    10889
+   ],
+   "out_tokens": [
+    1304,
+    1191,
+    894
+   ],
+   "in_tokens_sum": 198,
+   "cache_read_sum": 149739,
+   "cache_create_sum": 33456,
+   "out_tokens_sum": 3389,
+   "cost_usd": [
+    0.30583799999999994,
+    0.29852899999999993,
+    0.27660874999999996
+   ],
+   "cost_sum": 0.881,
+   "first_request_tokens": [
+    19674
+   ],
+   "dirs": [
+    "/tmp/rt-cc-ksq0at4v/t2",
+    "/tmp/rt-cc-nwatg0rm/t2",
+    "/tmp/rt-cc-o22ckpv7/t2"
+   ],
+   "pass": 3
+  },
+  "t3": {
+   "n": 3,
+   "why": [],
+   "sec": [
+    15.3,
+    15.3,
+    16.3
+   ],
+   "sec_median": 15.3,
+   "sec_mean": 15.6,
+   "api_ms": [
+    13284,
+    13995,
+    15507
+   ],
+   "turns": [
+    3,
+    3,
+    3
+   ],
+   "turns_sum": 9,
+   "calls_by_tool": {
+    "Bash": 6
+   },
+   "calls_sum": 6,
+   "in_tokens": [
+    66,
+    66,
+    66
+   ],
+   "cache_read": [
+    50140,
+    50152,
+    50066
+   ],
+   "cache_create": [
+    10885,
+    11126,
+    10895
+   ],
+   "out_tokens": [
+    672,
+    675,
+    744
+   ],
+   "in_tokens_sum": 198,
+   "cache_read_sum": 150358,
+   "cache_create_sum": 32906,
+   "out_tokens_sum": 2091,
+   "cost_usd": [
+    0.26549999999999996,
+    0.27047799999999994,
+    0.26929149999999996
+   ],
+   "cost_sum": 0.8053,
+   "first_request_tokens": [
+    19689
+   ],
+   "dirs": [
+    "/tmp/rt-cc-ksq0at4v/t3",
+    "/tmp/rt-cc-nwatg0rm/t3",
+    "/tmp/rt-cc-o22ckpv7/t3"
+   ],
+   "pass": 3
+  },
+  "t4": {
+   "n": 3,
+   "why": [],
+   "sec": [
+    15.8,
+    15.3,
+    16.4
+   ],
+   "sec_median": 15.8,
+   "sec_mean": 15.8,
+   "api_ms": [
+    14104,
+    13695,
+    15415
+   ],
+   "turns": [
+    3,
+    3,
+    3
+   ],
+   "turns_sum": 9,
+   "calls_by_tool": {
+    "Bash": 6
+   },
+   "calls_sum": 6,
+   "in_tokens": [
+    66,
+    66,
+    66
+   ],
+   "cache_read": [
+    50095,
+    50095,
+    50118
+   ],
+   "cache_create": [
+    10903,
+    10931,
+    10953
+   ],
+   "out_tokens": [
+    744,
+    781,
+    840
+   ],
+   "in_tokens_sum": 198,
+   "cache_read_sum": 150308,
+   "cache_create_sum": 32787,
+   "out_tokens_sum": 2365,
+   "cost_usd": [
+    0.26945275,
+    0.27186275000000004,
+    0.2752585
+   ],
+   "cost_sum": 0.8166,
+   "first_request_tokens": [
+    19687
+   ],
+   "dirs": [
+    "/tmp/rt-cc-ksq0at4v/t4",
+    "/tmp/rt-cc-nwatg0rm/t4",
+    "/tmp/rt-cc-o22ckpv7/t4"
+   ],
+   "pass": 3
+  },
+  "t5": {
+   "n": 3,
+   "why": [],
+   "sec": [
+    7.4,
+    7.3,
+    5.9
+   ],
+   "sec_median": 7.3,
+   "sec_mean": 6.9,
+   "api_ms": [
+    6798,
+    6205,
+    5347
+   ],
+   "turns": [
+    1,
+    1,
+    1
+   ],
+   "turns_sum": 3,
+   "calls_by_tool": {},
+   "calls_sum": 0,
+   "in_tokens": [
+    2,
+    2,
+    2
+   ],
+   "cache_read": [
+    9962,
+    9962,
+    9962
+   ],
+   "cache_create": [
+    9768,
+    9768,
+    9768
+   ],
+   "out_tokens": [
+    343,
+    216,
+    184
+   ],
+   "in_tokens_sum": 6,
+   "cache_read_sum": 29886,
+   "cache_create_sum": 29304,
+   "out_tokens_sum": 743,
+   "cost_usd": [
+    0.2160515,
+    0.2097015,
+    0.2081015
+   ],
+   "cost_sum": 0.6339,
+   "first_request_tokens": [
+    19732
+   ],
+   "dirs": [
+    "/tmp/rt-cc-ksq0at4v/t5",
+    "/tmp/rt-cc-nwatg0rm/t5",
+    "/tmp/rt-cc-o22ckpv7/t5"
+   ],
+   "pass": 3,
+   "replies": [
+    "ASK: The ticket asks to both upgrade the payment service to Python 3.12 and keep it on 3.11 because the SDK is not certified above 3.11. Which is the intended outcome: move to 3.12 anyway, or stay pinned on 3.11 until the SDK is certified?",
+    "ASK: The ticket asks both to upgrade the payment service to Python 3.12 and to keep it on 3.11 because the SDK is only certified up to 3.11. Which should I do: upgrade to 3.12 (accepting the uncertified SDK), or leave it on 3.11?",
+    "ASK: Should the payment service be upgraded to Python 3.12, or stay on 3.11 because the SDK is not certified above 3.11?"
+   ],
+   "reply_chars": [
+    239,
+    229,
+    120
+   ],
+   "ask_and_both_versions": [
+    true,
+    true,
+    true
+   ]
+  },
+  "t6": {
+   "n": 3,
+   "why": [],
+   "sec": [
+    20.3,
+    17.2,
+    18.6
+   ],
+   "sec_median": 18.6,
+   "sec_mean": 18.7,
+   "api_ms": [
+    19430,
+    15997,
+    17599
+   ],
+   "turns": [
+    3,
+    3,
+    3
+   ],
+   "turns_sum": 9,
+   "calls_by_tool": {
+    "Bash": 6
+   },
+   "calls_sum": 6,
+   "in_tokens": [
+    66,
+    66,
+    66
+   ],
+   "cache_read": [
+    50027,
+    49948,
+    50210
+   ],
+   "cache_create": [
+    11222,
+    10818,
+    11077
+   ],
+   "out_tokens": [
+    1137,
+    819,
+    1066
+   ],
+   "in_tokens_sum": 198,
+   "cache_read_sum": 150185,
+   "cache_create_sum": 33117,
+   "out_tokens_sum": 3022,
+   "cost_usd": [
+    0.29547675,
+    0.271477,
+    0.2890725
+   ],
+   "cost_sum": 0.856,
+   "first_request_tokens": [
+    19697
+   ],
+   "dirs": [
+    "/tmp/rt-cc-ksq0at4v/t6",
+    "/tmp/rt-cc-nwatg0rm/t6",
+    "/tmp/rt-cc-o22ckpv7/t6"
+   ],
+   "pass": 3
+  },
+  "t7": {
+   "n": 3,
+   "why": [],
+   "sec": [
+    17.6,
+    15.6,
+    21.8
+   ],
+   "sec_median": 17.6,
+   "sec_mean": 18.3,
+   "api_ms": [
+    16343,
+    14484,
+    20925
+   ],
+   "turns": [
+    3,
+    4,
+    4
+   ],
+   "turns_sum": 11,
+   "calls_by_tool": {
+    "Bash": 8
+   },
+   "calls_sum": 8,
+   "in_tokens": [
+    66,
+    98,
+    98
+   ],
+   "cache_read": [
+    49940,
+    70382,
+    70178
+   ],
+   "cache_create": [
+    10839,
+    10929,
+    11321
+   ],
+   "out_tokens": [
+    934,
+    747,
+    1230
+   ],
+   "in_tokens_sum": 262,
+   "cache_read_sum": 190500,
+   "cache_create_sum": 33089,
+   "out_tokens_sum": 2911,
+   "cost_usd": [
+    0.277631,
+    0.27552150000000003,
+    0.30747050000000004
+   ],
+   "cost_sum": 0.8606,
+   "first_request_tokens": [
+    19693
+   ],
+   "dirs": [
+    "/tmp/rt-cc-ksq0at4v/t7",
+    "/tmp/rt-cc-nwatg0rm/t7",
+    "/tmp/rt-cc-o22ckpv7/t7"
+   ],
+   "pass": 3
+  }
+ },
+ "totals": {
+  "passed": 21,
+  "n": 21,
+  "pct": 100,
+  "sec_sum": 335.7,
+  "sec_min": 5.9,
+  "sec_median": 16.2,
+  "sec_max": 27.9,
+  "sec_mean": 16.0,
+  "sec_per_pass": 16.0,
+  "sec_per_task": 16.0,
+  "api_ms_sum": 310076,
+  "api_s_sum": 310.1,
+  "turns_sum": 62,
+  "turns_min": 1,
+  "turns_max": 4,
+  "calls_sum": 41,
+  "calls_by_tool": {
+   "Bash": 41
+  },
+  "calls_per_run": 2.0,
+  "runs_without_calls": 3,
+  "in_tokens_sum": 1354,
+  "cache_read_sum": 1031285,
+  "cache_create_sum": 227137,
+  "input_total": 1259776,
+  "out_tokens_sum": 16307,
+  "input_total_k": 1260,
+  "out_tokens_k": 16.3,
+  "first_request_min": 19674,
+  "first_request_max": 19732,
+  "first_request_t1": 19675,
+  "cost_sum": 5.6507,
+  "cost_min": 0.2081,
+  "cost_max": 0.3075,
+  "cost_per_task": 0.2691,
+  "cost_per_pass": 0.2691,
+  "cost_sum_2": 5.65,
+  "cost_per_task_2": 0.27,
+  "series": [
+   {
+    "file": "logs/cc-repo-claude-fable-5-1-20260909-090524.jsonl",
+    "start": "09:05:24",
+    "end": "09:07:24",
+    "wall_s": 120.4,
+    "sec_sum": 118.9,
+    "passed": 7,
+    "cost_sum": 1.8913,
+    "tmp_base": "/tmp/rt-cc-ksq0at4v"
+   },
+   {
+    "file": "logs/cc-repo-claude-fable-5-1-20260909-090724.jsonl",
+    "start": "09:07:24",
+    "end": "09:09:11",
+    "wall_s": 107.1,
+    "sec_sum": 105.2,
+    "passed": 7,
+    "cost_sum": 1.8629,
+    "tmp_base": "/tmp/rt-cc-nwatg0rm"
+   },
+   {
+    "file": "logs/cc-repo-claude-fable-5-1-20260909-090911.jsonl",
+    "start": "09:09:11",
+    "end": "09:11:03",
+    "wall_s": 113.0,
+    "sec_sum": 111.6,
+    "passed": 7,
+    "cost_sum": 1.8965,
+    "tmp_base": "/tmp/rt-cc-o22ckpv7"
+   }
+  ],
+  "batch_start": "09:05:24",
+  "batch_end": "09:11:03",
+  "batch_wall_s": 340,
+  "batch_wall_min": 5.7,
+  "batch_overhead_s": 4
+ },
+ "cross_check": {
+  "runs_with_session_log": 21,
+  "mismatches": [],
+  "tool_result_is_error": 4,
+  "is_error_heads": [
+   "s1 t7: Exit code 5",
+   "s3 t2: Exit code 1",
+   "s3 t3: Exit code 1",
+   "s3 t7: Exit code 5"
+  ],
+  "is_error_note": "все is_error — ненулевой код выхода собственных диагностических команд модели (pytest до починки: exit 1 = тесты падают, exit 5 = тесты не собраны в цикле for), не сбои обвязки",
+  "claude_code_version": [
+   "2.1.265"
+  ],
+  "model_id": [
+   "claude-fable-5-1"
+  ],
+  "probe_version": [
+   "2.1.263"
+  ]
+ },
+ "probe": {
+  "file": "logs/cc-repo-claude-fable-5-1-20260908-212958.jsonl",
+  "id": "t1",
+  "ok": true,
+  "sec": 18.3,
+  "num_turns": 4,
+  "tool_calls": {
+   "Bash": 3
+  },
+  "cost_usd": 0.26005700000000004,
+  "first_request_tokens": 19588,
+  "reply": "Fixed. The `add` function in `calc.py` was returning `a - b` instead of `a + b`, so `add(2, 3)` produced -1. I changed the operator to `+` and reran the suite.\n\n```\n2 passed in 0.00s\n```",
+  "dir": "/tmp/rt-cc-w8wepx7q/t1",
+  "note": "проба 08.09 21:29, в 21 прогон не входит"
+ },
+ "ep03": {
+  "dsh_passed": {
+   "v": [
+    12,
+    21
+   ],
+   "src": "logs/facts-ep03.json: totals.dsh.passed/n"
+  },
+  "cc_passed": {
+   "v": [
+    14,
+    21
+   ],
+   "src": "logs/facts-ep03.json: totals.cc.passed/n"
+  },
+  "sec_per_pass": {
+   "v": {
+    "dsh": 362,
+    "cc": 405,
+    "fable": 16.0
+   },
+   "src": "logs/facts-ep03.json: totals.*.sec_per_pass; fable = sec_sum/passed по трём cc-repo-claude-fable-5-1-20260909-*.jsonl"
+  },
+  "sec_per_task": {
+   "v": {
+    "dsh": 207,
+    "cc": 270,
+    "fable": 16.0
+   },
+   "src": "logs/facts-ep03.json: totals.*.sec_per_task; fable = sec_sum/21"
+  },
+  "wh_per_pass": {
+   "v": {
+    "dsh": 11.2,
+    "cc": 16.1,
+    "fable": null
+   },
+   "src": "logs/facts-ep03.json: totals.*.wh_per_pass; для Fable замера мощности нет (см. power)"
+  },
+  "first_request_tokens": {
+   "v": {
+    "dsh": 7988,
+    "cc_9b": 21241,
+    "cc_fable_t1": 19675,
+    "cc_fable_min": 19674,
+    "cc_fable_max": 19732
+   },
+   "src": "logs/facts-ep03.json: totals.dsh/cc.first_request_tokens; fable: поле first_request_tokens записей, min/max по 21"
+  },
+  "t5_pass": {
+   "v": {
+    "dsh": [
+     0,
+     3
+    ],
+    "cc_9b": [
+     0,
+     3
+    ],
+    "fable": [
+     3,
+     3
+    ]
+   },
+   "src": "logs/facts-ep03.json: per_task.t5.*.pass; fable: записи id=t5, ok"
+  },
+  "t5_fail_total_ep03": {
+   "v": 6,
+   "src": "logs/facts-ep03.json: derived.t5_fail_total"
+  },
+  "cloud_ep03": {
+   "v": {
+    "haiku": {
+     "passed": 7,
+     "n": 7,
+     "cost_usd": 0.24,
+     "calls": 31,
+     "turns": 38,
+     "in_tokens_k": 737
+    },
+    "sonnet": {
+     "passed": 7,
+     "n": 7,
+     "cost_usd": 0.63,
+     "calls": 36,
+     "turns": 43,
+     "in_tokens_k": 1176
+    }
+   },
+   "src": "logs/facts-ep03.json: cloud.haiku/sonnet (по одной серии из 7, 05.09 00:35/00:37)"
+  },
+  "cost_per_series": {
+   "v": {
+    "haiku_ep03": 0.24,
+    "sonnet_ep03": 0.63,
+    "fable_mean_of_3": 1.88,
+    "fable_series": [
+     1.8913,
+     1.8629,
+     1.8965
+    ]
+   },
+   "src": "logs/facts-ep03.json: cloud.*.cost_usd (одна серия); fable: сумма cost_usd по серии, средняя по трём"
+  },
+  "calls_ep03": {
+   "v": {
+    "dsh": 220,
+    "cc_9b": 271,
+    "fable": 41
+   },
+   "src": "logs/facts-ep03.json: totals.*.calls; fable: сумма tool_calls по 21"
+  },
+  "turns_ep03": {
+   "v": {
+    "cc_9b": 294,
+    "fable": 62
+   },
+   "src": "logs/facts-ep03.json: totals.cc.turns; fable: сумма num_turns"
+  },
+  "errors_ep03": {
+   "v": {
+    "dsh": 33,
+    "cc_9b": 33,
+    "fable_is_error": 4
+   },
+   "src": "logs/facts-ep03.json: totals.*.errors; fable: tool_result.is_error по сессиям ~/.claude/projects (см. cross_check.is_error_note)"
+  },
+  "in_tokens_ep03": {
+   "v": {
+    "cc_9b_M": 8.0,
+    "fable_input_total_k": 1260
+   },
+   "src": "logs/facts-ep03.json: totals.cc.in_tokens_M (только input_tokens, без кэша); fable: in+cache_read+cache_create"
+  },
+  "sec_ratio_fable_vs": {
+   "v": {
+    "dsh": 22.6,
+    "cc_9b": 25.3
+   },
+   "src": "ep03 sec_per_pass / fable sec_per_pass"
+  },
+  "first_request_ratio_cc_9b_over_fable": {
+   "v": 1.08,
+   "src": "logs/facts-ep03.json totals.cc.first_request_tokens / fable t1 first_request_tokens"
+  },
+  "pass_diff_fable_minus": {
+   "v": {
+    "dsh": 9,
+    "cc_9b": 7
+   },
+   "src": "fable passed − ep03 passed"
+  },
+  "ep03_model": {
+   "v": "qwen3.5:9b-ctx32k",
+   "src": "logs/facts-ep03.json: derived.model"
+  },
+  "ep03_date": {
+   "v": "2026-09-05",
+   "src": "logs/facts-ep03.json: meta.date"
+  }
+ },
+ "board_t1": {
+  "dsh": {
+   "runs": [
+    {
+     "sec": 78.0,
+     "ok": true,
+     "file": "logs/dsh-qwen3.5_9b-ctx32k-20260905-0440.jsonl",
+     "dir": "/tmp/rt-23jmr0z4/t1"
+    },
+    {
+     "sec": 90.2,
+     "ok": true,
+     "file": "logs/dsh-qwen3.5_9b-ctx32k-20260905-0658.jsonl",
+     "dir": "/tmp/rt-zl2rb5zs/t1"
+    },
+    {
+     "sec": 25.6,
+     "ok": true,
+     "file": "logs/dsh-lost-runs.jsonl",
+     "dir": "/tmp/rt-0y6y_wzz/t1",
+     "reconstructed_from": "main-20260905-0440.out:209 (файл журнала перезаписан задачей t2 в ту же минуту; сессия dsh сохранена)"
+    }
+   ],
+   "secs": [
+    78.0,
+    90.2,
+    25.6
+   ],
+   "sec_median": 78,
+   "calls_sum": 22,
+   "errors_sum": 3,
+   "first_request_tokens": 7988,
+   "repeat_1534_not_counted": [
+    {
+     "sec": 29.6,
+     "ok": true,
+     "file": "logs/dsh-qwen3.5_9b-ctx32k-20260905-153448.jsonl"
+    }
+   ],
+   "note": "зачётные по правилу EP03: 78.0 (04:40, серия 1), 25.6 (06:09, серия 2, журнал перезаписан, восстановлен из main.out:209), 90.2 (06:58, серия 3); повтор 15:34 (29.6 с) в EP03 не зачтён"
+  },
+  "opencode": {
+   "file": "logs/opencode-qwen3.5_9b-ctx32k-20260908-202345.jsonl",
+   "events": "logs/opencode-events/tmp-rt-oc-l1gjtqh4-t1.jsonl",
+   "model": "qwen3.5:9b-ctx32k",
+   "ok": true,
+   "sec": 91.9,
+   "calls_by_events": 8,
+   "tools": [
+    "glob",
+    "bash",
+    "bash",
+    "invalid",
+    "read",
+    "read",
+    "edit",
+    "bash"
+   ],
+   "invalid": 1,
+   "invalid_detail": {
+    "tool": "run",
+    "error": "Model tried to call unavailable tool 'run'. Available tools: bash, edit, glob, grep, invalid, read, skill, task, todowrite, webfetch, write."
+   },
+   "record_calls_field": 8,
+   "record_errors_field_stale": 0,
+   "steps": 7,
+   "first_step_input_tokens": 16476,
+   "input_tokens_sum": 118742,
+   "output_tokens_sum": 502,
+   "total_tokens_sum": 119244,
+   "events_span_s": 15.9,
+   "ctx32k_earlier_probes_failed": [
+    "logs/opencode-qwen3.5_9b-20260908-201956.jsonl",
+    "logs/opencode-qwen3.5_9b-ctx32k-20260908-202009.jsonl"
+   ]
+  },
+  "hermes": {
+   "ok_file": "logs/hermes-qwen3.5_9b-ctx64k-20260908-205139.jsonl",
+   "model": "qwen3.5:9b-ctx64k",
+   "ok": true,
+   "sec": 147.4,
+   "api_calls": 9,
+   "input_tokens": 191119,
+   "output_tokens": 761,
+   "total_tokens": 191880,
+   "cache_read_tokens": 0,
+   "remote": "~/rt/rt-hm-4k5mi_22/t1",
+   "remote_note": "поле remote в записи: задача выполнялась по ssh в песочнице (~/rt/…), время sec — на стороне прогонщика",
+   "refusal_32k_file": "logs/hermes-qwen3.5_9b-ctx32k-20260908-202434.jsonl",
+   "refusal_32k_text": "Model qwen3.5:9b-ctx32k has a context window of 32,768 tokens, which is below the minimum 64,000 required by Hermes Agent.  Choose a model with at least 64K context.  If your server reports a window smaller than the model's true window, set model.context_length in config.yaml to the real value (this must be at least 64K).",
+   "refusal_32k_sec": 8.5,
+   "timeout_file": "logs/hermes-qwen3.5_9b-ctx64k-20260908-202610.jsonl",
+   "timeout_sec": 900.5,
+   "timeout_rc": 124,
+   "timeout_reply": "<TIMEOUT 900s>",
+   "timeout_note": "причина в самой записи не названа (usage_and_stderr пуст); по соседним hm-pwdtest-204415.out / hm-pwdtest2-204953.out проверялся TERMINAL_CWD — связь с таймаутом только по контексту, не по логу",
+   "empty_call_file": "logs/hm-timing-204231.out",
+   "empty_call_input_tokens": 20552,
+   "empty_call_output_tokens": 64,
+   "empty_call_api_calls": 1,
+   "empty_call_wall_s": 43
+  },
+  "claude_code": {
+   "first_request_9b": 21241,
+   "sec_median_9b": 121,
+   "calls_sum_9b": 17,
+   "first_request_fable": 19675,
+   "sec_fable": [
+    14.6,
+    14.9,
+    16.2
+   ],
+   "calls_fable": {
+    "Bash": 9
+   },
+   "turns_fable": [
+    4,
+    4,
+    4
+   ]
+  }
+ },
+ "b27": {
+  "probe_file": "logs/probe27b-211810.out",
+  "ollama_version": "0.32.1",
+  "parameter_size": "26.9B",
+  "quant": "IQ3_S",
+  "gguf_context_length": 262144,
+  "ps_ctx": 32768,
+  "ps_size_gb": 12.02,
+  "vram_used_mib": 14199,
+  "vram_total_mib": 16311,
+  "load_s": 6.5,
+  "eval_tok": 200,
+  "tok_s": 28.0,
+  "tool_call_ok": true,
+  "create_wall_s": 62,
+  "dsh_t1_file": "logs/dsh-qwen3.8-27b-gsq-ctx32k-20260908-211955.jsonl",
+  "dsh_t1_ok": true,
+  "dsh_t1_sec": 44.5,
+  "dsh_t1_model": "qwen3.8-27b-gsq-ctx32k",
+  "dsh_t1_reasoning_steps": 5,
+  "vram_free_mib": 2112
+ },
+ "power": {
+  "ep03_log_name": "logs/power-<STAMP>.csv (юнит user-systemd ep03-power: nvidia-smi.exe --query-gpu=power.draw,memory.used,utilization.gpu раз в 1 с; колонки epoch,W,MiB,%)",
+  "files": [
+   {
+    "file": "logs/power-20260905-0440.csv",
+    "first": "2026-09-05 04:40:52",
+    "last": "2026-09-05 15:35:17",
+    "samples": 8232
+   },
+   {
+    "file": "logs/power-fable-20260909-095511.csv",
+    "first": "2026-09-09 09:55:11",
+    "last": "2026-09-09 09:57:39",
+    "samples": 137
+   },
+   {
+    "file": "logs/power-qwen9b.csv",
+    "first": "2026-09-04 22:14:04",
+    "last": "2026-09-04 22:19:10",
+    "samples": 294
+   }
+  ],
+  "fable_window": "2026-09-09 09:05:24–09:11:04",
+  "fable_power_log": null,
+  "fable_power_series_log": "logs/power-fable-20260909-095511.csv",
+  "files_modified_0909": [
+   "logs/cc-repo-claude-fable-5-1-20260909-090524.jsonl",
+   "logs/cc-repo-claude-fable-5-1-20260909-090724.jsonl",
+   "logs/cc-repo-claude-fable-5-1-20260909-090911.jsonl",
+   "logs/cc-repo-claude-fable-5-1-20260909-095516.jsonl",
+   "logs/fable-batch-20260909-090524.out",
+   "logs/fable-batch-last.txt",
+   "logs/fable-power-20260909-095511.out",
+   "logs/power-fable-20260909-095511.csv"
+  ],
+  "verdict": "за окно 21 прогона (09:05–09:11) замера мощности НЕТ: юнит ep03-power остановлен 05.09 15:35, батч ep04-fable-batch шёл без сборщика; отдельная четвёртая серия 09:55–09:57 снята под юнитом ep04-fable-power (logs/power-fable-20260909-095511.csv) — см. power_series, в 21 прогон не входит"
+ },
+ "power_series": {
+  "file": "logs/cc-repo-claude-fable-5-1-20260909-095516.jsonl",
+  "csv": "logs/power-fable-20260909-095511.csv",
+  "out": "logs/fable-power-20260909-095511.out",
+  "unit": "ep04-fable-power (journalctl --user: 09:55:11–09:57:40)",
+  "in_21": false,
+  "passed": 7,
+  "n": 7,
+  "start": "09:55:16",
+  "end": "09:57:35",
+  "window_s": 139,
+  "csv_first": "09:55:11",
+  "csv_last": "09:57:39",
+  "samples_total": 137,
+  "samples_in_window": 128,
+  "sample_gaps_2s": 12,
+  "w_mean": 30.3,
+  "w_min": 28.91,
+  "w_median": 30.15,
+  "w_max": 32.88,
+  "mib_min": 1633,
+  "mib_max": 1746,
+  "util_max": 9,
+  "wh_window": 1.168,
+  "wh_window_hold": 1.167,
+  "wh_per_pass": 0.167,
+  "wh_by_task": {
+   "t1": 0.189,
+   "t2": 0.192,
+   "t3": 0.131,
+   "t4": 0.249,
+   "t5": 0.055,
+   "t6": 0.16,
+   "t7": 0.175
+  },
+  "wh_by_task_sum": 1.15,
+  "sec": {
+   "t1": 22.5,
+   "t2": 22.8,
+   "t3": 15.6,
+   "t4": 29.6,
+   "t5": 6.6,
+   "t6": 19.0,
+   "t7": 20.8
+  },
+  "sec_sum": 136.9,
+  "turns": {
+   "t1": 4,
+   "t2": 3,
+   "t3": 3,
+   "t4": 5,
+   "t5": 1,
+   "t6": 3,
+   "t7": 3
+  },
+  "turns_sum": 22,
+  "calls_by_tool": {
+   "Bash": 15
+  },
+  "calls_sum": 15,
+  "cost_sum": 1.9127,
+  "first_request_min": 19674,
+  "first_request_max": 19732,
+  "t5_reply": "ASK: The ticket asks both to upgrade the payment service to Python 3.12 and to keep it on 3.11 because the SDK is not certified above 3.11. Which is intended, upgrading to 3.12 or staying on 3.11?",
+  "dirs_base": "/tmp/rt-cc-8i9sggm1",
+  "ep03_wh_per_pass": {
+   "dsh": 11.2,
+   "cc": 16.1
+  },
+  "ep03_mean_w": {
+   "dsh": 103,
+   "cc": 143
+  },
+  "ep03_idle_w": 27,
+  "ep03_peak_w": 177,
+  "caveat": "W — nvidia-smi power.draw видеокарты стенда (не хоста целиком), карта простаивает: модель работает в датацентре, его энергия неизвестна и не утверждается. Метод и колонки те же, что у EP03 (power_sample_s=1)."
+ },
+ "cannot_claim": [
+  "Ватт-часы для 21 прогона (09:05–09:11): файла мощности нет. Для отдельной четвёртой серии (09:55–09:57) замер есть — но это мощность видеокарты стенда по nvidia-smi power.draw, пока карта простаивает (память 1633–1746 МиБ, загрузка ≤9 %): работу делает датацентр, его энергия неизвестна и не утверждается. Сравнивать с 11.2/16.1 Вт·ч у 9B можно только с этой оговоркой: «столько ест карта, которая ничего не делает».",
+  "Стоимость: cost_usd — показания счётчика total_cost_usd в JSON-ответе Claude Code, не счёт и не списание; прогон шёл по подписке.",
+  "Скорость модели (ток/с) и задержка API у Fable: в логе только sec (стенка subprocess с запуском claude) и api_ms (duration_api_ms Claude Code); токенов в секунду нет.",
+  "Отсутствие ошибок у Fable нельзя подавать как «0 ошибок инструментов»: 4 tool_result с is_error есть — это ненулевые коды выхода собственных диагностических команд (pytest до починки), обвязка их не считала.",
+  "Haiku/sonnet в EP03 — по одной серии из 7 (не 21): сравнивать с Fable только по серии или по доле проходов.",
+  "Доска четырёх обвязок собрана из проб разных дней (dsh и Claude Code 9B — 05.09, OpenCode и Hermes — 08.09) и одной задачи t1; Hermes шёл на другом теге модели (qwen3.5:9b-ctx64k, 32k он отказался брать) и по ssh в песочнице (поле remote). Это не 3×7 и не одна карта-в-одно-время.",
+  "OpenCode 91.9 с: события покрывают 16.0 с; чем заняты остальные ~76 с, лог не говорит (запуск obвязки, загрузка модели — предположение).",
+  "Hermes-таймаут 900.5 с (202610): причина в записи не названа; связь с TERMINAL_CWD — из соседних проверок hm-pwdtest*.out, не из самого прогона.",
+  "27B GSQ-RCO: одна проба t1 в dsh (44.5 с) и один замер 28.0 ток/с на 200 токенах; ни серий, ни других задач, ни ватт.",
+  "Поле reply в записях усечено прогонщиком до 400 символов; ответы t5 короче (120–239 символов), поэтому они целиком; остальные reply — обрезки.",
+  "Первые запросы Fable 19 674–19 732 токенов — это usage первого ответа модели (input+cache_creation+cache_read); сравнение с 21 241 у 9B корректно по способу подсчёта (тот же session_stats в run_cc_repo.py), но версии Claude Code разные (2.1.265 против EP03).",
+  "Скрытые тесты: судья кладёт test_hidden.py и чистые test_*.py поверх кода агента; агент видел только исходные test_*.py задачи. «Тесты, которые нельзя прочитать» = hidden в judge_repo.py, не «все тесты»."
+ ],
+ "derived": {
+  "model": {
+   "v": "claude-fable-5-1",
+   "src": "поле model записей cc-repo-claude-fable-5-1-*.jsonl и message.model в сессиях ~/.claude/projects"
+  },
+  "harness": {
+   "v": "claude-code",
+   "src": "поле harness записей"
+  },
+  "claude_code_version": {
+   "v": [
+    "2.1.265"
+   ],
+   "src": "поле version записей сессий ~/.claude/projects/-tmp-rt-cc-*/*.jsonl (серии 09.09)"
+  },
+  "probe_claude_code_version": {
+   "v": [
+    "2.1.263"
+   ],
+   "src": "то же для сессии пробы 08.09 (-tmp-rt-cc-w8wepx7q-t1)"
+  },
+  "tasks_n": {
+   "v": 7,
+   "src": "repo-tasks/make.py: t1..t7"
+  },
+  "runs_per_task": {
+   "v": 3,
+   "src": "три файла серий"
+  },
+  "runs_total": {
+   "v": 21,
+   "src": "3×7, len(records)"
+  },
+  "passed": {
+   "v": 21,
+   "src": "count(ok==true) по трём файлам серий"
+  },
+  "pct": {
+   "v": 100,
+   "src": "100*passed/21"
+  },
+  "series_passed": {
+   "v": [
+    7,
+    7,
+    7
+   ],
+   "src": "count(ok) по каждому файлу"
+  },
+  "sec_min": {
+   "v": 5.9,
+   "src": "min(sec) по 21"
+  },
+  "sec_median": {
+   "v": 16.2,
+   "src": "median(sec) по 21"
+  },
+  "sec_max": {
+   "v": 27.9,
+   "src": "max(sec) по 21"
+  },
+  "sec_mean": {
+   "v": 16.0,
+   "src": "sum(sec)/21"
+  },
+  "sec_sum": {
+   "v": 335.7,
+   "src": "sum(sec) по 21"
+  },
+  "sec_per_pass": {
+   "v": 16.0,
+   "src": "sum(sec)/passed"
+  },
+  "api_s_sum": {
+   "v": 310.1,
+   "src": "sum(api_ms)/1000"
+  },
+  "batch_wall_s": {
+   "v": 340,
+   "src": "mtime последнего файла (…-090911.jsonl) минус метка в имени первого (…-090524.jsonl); journalctl ep04-fable-batch: 5 мин 40.009 с"
+  },
+  "batch_wall_min": {
+   "v": 5.7,
+   "src": "batch_wall_s/60"
+  },
+  "batch_overhead_s": {
+   "v": 4,
+   "src": "batch_wall_s − sum(sec): make.py, запуск claude, судья"
+  },
+  "series_wall_s": {
+   "v": [
+    120.4,
+    107.1,
+    113.0
+   ],
+   "src": "по каждой серии: mtime файла − метка в имени"
+  },
+  "turns_sum": {
+   "v": 62,
+   "src": "sum(num_turns)"
+  },
+  "turns_min": {
+   "v": 1,
+   "src": "min(num_turns)"
+  },
+  "turns_max": {
+   "v": 4,
+   "src": "max(num_turns)"
+  },
+  "turns_by_task": {
+   "v": {
+    "t1": [
+     4,
+     4,
+     4
+    ],
+    "t2": [
+     3,
+     3,
+     3
+    ],
+    "t3": [
+     3,
+     3,
+     3
+    ],
+    "t4": [
+     3,
+     3,
+     3
+    ],
+    "t5": [
+     1,
+     1,
+     1
+    ],
+    "t6": [
+     3,
+     3,
+     3
+    ],
+    "t7": [
+     3,
+     4,
+     4
+    ]
+   },
+   "src": "num_turns по сериям 1,2,3"
+  },
+  "calls_sum": {
+   "v": 41,
+   "src": "sum(tool_calls.*) по 21; независимо: tool_use по сессиям ~/.claude/projects (cross_check)"
+  },
+  "calls_by_tool": {
+   "v": {
+    "Bash": 41
+   },
+   "src": "tool_calls по именам, сумма по 21"
+  },
+  "calls_by_task": {
+   "v": {
+    "t1": {
+     "Bash": 9
+    },
+    "t2": {
+     "Bash": 6
+    },
+    "t3": {
+     "Bash": 6
+    },
+    "t4": {
+     "Bash": 6
+    },
+    "t5": {},
+    "t6": {
+     "Bash": 6
+    },
+    "t7": {
+     "Bash": 8
+    }
+   },
+   "src": "tool_calls по именам, сумма по трём сериям задачи"
+  },
+  "calls_per_run": {
+   "v": 2.0,
+   "src": "calls_sum/21"
+  },
+  "runs_without_calls": {
+   "v": 3,
+   "src": "записи с tool_calls == {} (все три t5)"
+  },
+  "read_edit_calls": {
+   "v": {
+    "Read": 0,
+    "Edit": 0
+   },
+   "src": "tool_calls: Read и Edit ни разу при разрешённых Bash,Read,Edit (run_cc_repo.py --allowedTools)"
+  },
+  "in_tokens_sum": {
+   "v": 1354,
+   "src": "sum(in_tokens)"
+  },
+  "cache_read_sum": {
+   "v": 1031285,
+   "src": "sum(cache_read)"
+  },
+  "cache_create_sum": {
+   "v": 227137,
+   "src": "sum(cache_create)"
+  },
+  "input_total": {
+   "v": 1259776,
+   "src": "sum(in_tokens+cache_read+cache_create)"
+  },
+  "input_total_k": {
+   "v": 1260,
+   "src": "input_total/1000, округлено"
+  },
+  "out_tokens_sum": {
+   "v": 16307,
+   "src": "sum(out_tokens)"
+  },
+  "out_tokens_k": {
+   "v": 16.3,
+   "src": "out_tokens_sum/1000"
+  },
+  "cache_share_pct": {
+   "v": 82,
+   "src": "100*cache_read_sum/input_total"
+  },
+  "first_request_t1": {
+   "v": 19675,
+   "src": "first_request_tokens записи t1 (одинаково в трёх сериях)"
+  },
+  "first_request_min": {
+   "v": 19674,
+   "src": "min(first_request_tokens) по 21"
+  },
+  "first_request_max": {
+   "v": 19732,
+   "src": "max(first_request_tokens) по 21"
+  },
+  "first_request_probe": {
+   "v": 19588,
+   "src": "first_request_tokens пробы 08.09 (другая версия Claude Code)"
+  },
+  "cost_sum": {
+   "v": 5.6507,
+   "src": "sum(cost_usd) по 21"
+  },
+  "cost_sum_2": {
+   "v": 5.65,
+   "src": "cost_sum, 2 знака"
+  },
+  "cost_per_task": {
+   "v": 0.2691,
+   "src": "cost_sum/21"
+  },
+  "cost_per_task_2": {
+   "v": 0.27,
+   "src": "cost_per_task, 2 знака"
+  },
+  "cost_per_pass": {
+   "v": 0.2691,
+   "src": "cost_sum/passed"
+  },
+  "cost_min": {
+   "v": 0.2081,
+   "src": "min(cost_usd)"
+  },
+  "cost_max": {
+   "v": 0.3075,
+   "src": "max(cost_usd)"
+  },
+  "cost_by_series": {
+   "v": [
+    1.8913,
+    1.8629,
+    1.8965
+   ],
+   "src": "sum(cost_usd) по файлу серии"
+  },
+  "cost_by_task": {
+   "v": {
+    "t1": 0.7973,
+    "t2": 0.881,
+    "t3": 0.8053,
+    "t4": 0.8166,
+    "t5": 0.6339,
+    "t6": 0.856,
+    "t7": 0.8606
+   },
+   "src": "sum(cost_usd) по трём сериям задачи"
+  },
+  "t5_replies": {
+   "v": [
+    "ASK: The ticket asks to both upgrade the payment service to Python 3.12 and keep it on 3.11 because the SDK is not certified above 3.11. Which is the intended outcome: move to 3.12 anyway, or stay pinned on 3.11 until the SDK is certified?",
+    "ASK: The ticket asks both to upgrade the payment service to Python 3.12 and to keep it on 3.11 because the SDK is only certified up to 3.11. Which should I do: upgrade to 3.12 (accepting the uncertified SDK), or leave it on 3.11?",
+    "ASK: Should the payment service be upgraded to Python 3.12, or stay on 3.11 because the SDK is not certified above 3.11?"
+   ],
+   "src": "поле reply записей id=t5, серии 1,2,3 (целиком: длина < 400)"
+  },
+  "t5_reply_chars": {
+   "v": [
+    239,
+    229,
+    120
+   ],
+   "src": "len(reply)"
+  },
+  "t5_ask_both_versions": {
+   "v": [
+    true,
+    true,
+    true
+   ],
+   "src": "reply начинается с ASK и содержит 3.12 и 3.11 (условие судьи judge_repo.py)"
+  },
+  "t5_sec": {
+   "v": [
+    7.4,
+    7.3,
+    5.9
+   ],
+   "src": "sec записей t5"
+  },
+  "t5_turns": {
+   "v": [
+    1,
+    1,
+    1
+   ],
+   "src": "num_turns записей t5"
+  },
+  "sec_by_task": {
+   "v": {
+    "t1": [
+     14.6,
+     14.9,
+     16.2
+    ],
+    "t2": [
+     27.9,
+     19.6,
+     16.4
+    ],
+    "t3": [
+     15.3,
+     15.3,
+     16.3
+    ],
+    "t4": [
+     15.8,
+     15.3,
+     16.4
+    ],
+    "t5": [
+     7.4,
+     7.3,
+     5.9
+    ],
+    "t6": [
+     20.3,
+     17.2,
+     18.6
+    ],
+    "t7": [
+     17.6,
+     15.6,
+     21.8
+    ]
+   },
+   "src": "sec по сериям 1,2,3"
+  },
+  "sec_median_by_task": {
+   "v": {
+    "t1": 14.9,
+    "t2": 19.6,
+    "t3": 15.3,
+    "t4": 15.8,
+    "t5": 7.3,
+    "t6": 18.6,
+    "t7": 17.6
+   },
+   "src": "median(sec) по трём сериям"
+  },
+  "probe": {
+   "v": {
+    "sec": 18.3,
+    "ok": true,
+    "turns": 4,
+    "calls": {
+     "Bash": 3
+    },
+    "cost_usd": 0.2601
+   },
+   "src": "cc-repo-claude-fable-5-1-20260908-212958.jsonl (проба t1, не в 21)"
+  },
+  "is_error_tool_results": {
+   "v": 4,
+   "src": "tool_result.is_error по сессиям ~/.claude/projects/-tmp-rt-cc-{ksq0at4v,nwatg0rm,o22ckpv7}-t*/"
+  },
+  "session_mismatches": {
+   "v": 0,
+   "src": "расхождений между tool_calls/first_request_tokens записи и пересчётом по сессии"
+  },
+  "timeout_s": {
+   "v": 1200,
+   "src": "run_cc_repo.py: subprocess timeout=1200"
+  },
+  "allowed_tools": {
+   "v": "Bash,Read,Edit",
+   "src": "run_cc_repo.py: --allowedTools"
+  },
+  "hidden_tests_tasks": {
+   "v": [
+    "t1",
+    "t2",
+    "t3",
+    "t4",
+    "t6",
+    "t7"
+   ],
+   "src": "judge_repo.py: HIDDEN — задачи со скрытым тестом (t5 судится по diff и ответу ASK)"
+  },
+  "hidden_tests_n": {
+   "v": 6,
+   "src": "len(HIDDEN) в judge_repo.py"
+  },
+  "ep03_dsh_passed": {
+   "v": [
+    12,
+    21
+   ],
+   "src": "logs/facts-ep03.json: totals.dsh.passed/n"
+  },
+  "ep03_cc_passed": {
+   "v": [
+    14,
+    21
+   ],
+   "src": "logs/facts-ep03.json: totals.cc.passed/n"
+  },
+  "ep03_sec_per_pass": {
+   "v": {
+    "dsh": 362,
+    "cc": 405,
+    "fable": 16.0
+   },
+   "src": "logs/facts-ep03.json: totals.*.sec_per_pass; fable = sec_sum/passed по трём cc-repo-claude-fable-5-1-20260909-*.jsonl"
+  },
+  "ep03_sec_per_task": {
+   "v": {
+    "dsh": 207,
+    "cc": 270,
+    "fable": 16.0
+   },
+   "src": "logs/facts-ep03.json: totals.*.sec_per_task; fable = sec_sum/21"
+  },
+  "ep03_wh_per_pass": {
+   "v": {
+    "dsh": 11.2,
+    "cc": 16.1,
+    "fable": null
+   },
+   "src": "logs/facts-ep03.json: totals.*.wh_per_pass; для Fable замера мощности нет (см. power)"
+  },
+  "ep03_first_request_tokens": {
+   "v": {
+    "dsh": 7988,
+    "cc_9b": 21241,
+    "cc_fable_t1": 19675,
+    "cc_fable_min": 19674,
+    "cc_fable_max": 19732
+   },
+   "src": "logs/facts-ep03.json: totals.dsh/cc.first_request_tokens; fable: поле first_request_tokens записей, min/max по 21"
+  },
+  "ep03_t5_pass": {
+   "v": {
+    "dsh": [
+     0,
+     3
+    ],
+    "cc_9b": [
+     0,
+     3
+    ],
+    "fable": [
+     3,
+     3
+    ]
+   },
+   "src": "logs/facts-ep03.json: per_task.t5.*.pass; fable: записи id=t5, ok"
+  },
+  "ep03_t5_fail_total_ep03": {
+   "v": 6,
+   "src": "logs/facts-ep03.json: derived.t5_fail_total"
+  },
+  "ep03_cloud_ep03": {
+   "v": {
+    "haiku": {
+     "passed": 7,
+     "n": 7,
+     "cost_usd": 0.24,
+     "calls": 31,
+     "turns": 38,
+     "in_tokens_k": 737
+    },
+    "sonnet": {
+     "passed": 7,
+     "n": 7,
+     "cost_usd": 0.63,
+     "calls": 36,
+     "turns": 43,
+     "in_tokens_k": 1176
+    }
+   },
+   "src": "logs/facts-ep03.json: cloud.haiku/sonnet (по одной серии из 7, 05.09 00:35/00:37)"
+  },
+  "ep03_cost_per_series": {
+   "v": {
+    "haiku_ep03": 0.24,
+    "sonnet_ep03": 0.63,
+    "fable_mean_of_3": 1.88,
+    "fable_series": [
+     1.8913,
+     1.8629,
+     1.8965
+    ]
+   },
+   "src": "logs/facts-ep03.json: cloud.*.cost_usd (одна серия); fable: сумма cost_usd по серии, средняя по трём"
+  },
+  "ep03_calls_ep03": {
+   "v": {
+    "dsh": 220,
+    "cc_9b": 271,
+    "fable": 41
+   },
+   "src": "logs/facts-ep03.json: totals.*.calls; fable: сумма tool_calls по 21"
+  },
+  "ep03_turns_ep03": {
+   "v": {
+    "cc_9b": 294,
+    "fable": 62
+   },
+   "src": "logs/facts-ep03.json: totals.cc.turns; fable: сумма num_turns"
+  },
+  "ep03_errors_ep03": {
+   "v": {
+    "dsh": 33,
+    "cc_9b": 33,
+    "fable_is_error": 4
+   },
+   "src": "logs/facts-ep03.json: totals.*.errors; fable: tool_result.is_error по сессиям ~/.claude/projects (см. cross_check.is_error_note)"
+  },
+  "ep03_in_tokens_ep03": {
+   "v": {
+    "cc_9b_M": 8.0,
+    "fable_input_total_k": 1260
+   },
+   "src": "logs/facts-ep03.json: totals.cc.in_tokens_M (только input_tokens, без кэша); fable: in+cache_read+cache_create"
+  },
+  "ep03_sec_ratio_fable_vs": {
+   "v": {
+    "dsh": 22.6,
+    "cc_9b": 25.3
+   },
+   "src": "ep03 sec_per_pass / fable sec_per_pass"
+  },
+  "ep03_first_request_ratio_cc_9b_over_fable": {
+   "v": 1.08,
+   "src": "logs/facts-ep03.json totals.cc.first_request_tokens / fable t1 first_request_tokens"
+  },
+  "ep03_pass_diff_fable_minus": {
+   "v": {
+    "dsh": 9,
+    "cc_9b": 7
+   },
+   "src": "fable passed − ep03 passed"
+  },
+  "ep03_ep03_model": {
+   "v": "qwen3.5:9b-ctx32k",
+   "src": "logs/facts-ep03.json: derived.model"
+  },
+  "ep03_ep03_date": {
+   "v": "2026-09-05",
+   "src": "logs/facts-ep03.json: meta.date"
+  },
+  "board_t1_dsh_secs": {
+   "v": [
+    78.0,
+    90.2,
+    25.6
+   ],
+   "src": "dsh t1 EP03: logs/dsh-…-0440.jsonl, logs/dsh-lost-runs.jsonl (main.out:209), logs/dsh-…-0658.jsonl"
+  },
+  "board_t1_dsh_sec_median": {
+   "v": 78,
+   "src": "median трёх; = facts-ep03 per_task.t1.dsh.sec_median"
+  },
+  "board_t1_dsh_repeat_1534": {
+   "v": [
+    29.6
+   ],
+   "src": "logs/dsh-…-153448.jsonl — повтор, в EP03 не зачтён (бриф называл «30»)"
+  },
+  "board_t1_dsh_calls": {
+   "v": [
+    22,
+    3
+   ],
+   "src": "facts-ep03 per_task.t1.dsh.calls_sum/errors_sum (три прогона)"
+  },
+  "board_t1_opencode": {
+   "v": {
+    "sec": 91.9,
+    "calls": 8,
+    "invalid": 1,
+    "first_step_input_tokens": 16476,
+    "input_tokens_sum": 118742,
+    "steps": 7,
+    "events_span_s": 15.9
+   },
+   "src": "logs/opencode-qwen3.5_9b-ctx32k-20260908-202345.jsonl (sec) + logs/opencode-events/tmp-rt-oc-l1gjtqh4-t1.jsonl (tool_use, step_finish.tokens)"
+  },
+  "board_t1_opencode_invalid_tool": {
+   "v": "run",
+   "src": "события: tool==invalid, input.tool"
+  },
+  "board_t1_hermes": {
+   "v": {
+    "sec": 147.4,
+    "api_calls": 9,
+    "input_tokens": 191119,
+    "output_tokens": 761,
+    "model": "qwen3.5:9b-ctx64k"
+   },
+   "src": "logs/hermes-qwen3.5_9b-ctx64k-20260908-205139.jsonl: sec, usage_and_stderr json"
+  },
+  "board_t1_hermes_refusal_32k": {
+   "v": "Model qwen3.5:9b-ctx32k has a context window of 32,768 tokens, which is below the minimum 64,000 required by Hermes Agent.  Choose a model with at least 64K context.  If your server reports a window smaller than the model's true window, set model.context_length in config.yaml to the real value (this must be at least 64K).",
+   "src": "logs/hermes-qwen3.5_9b-ctx32k-20260908-202434.jsonl: usage_and_stderr.failure, дословно"
+  },
+  "board_t1_hermes_min_ctx": {
+   "v": 64000,
+   "src": "из текста отказа: minimum 64,000"
+  },
+  "board_t1_hermes_timeout": {
+   "v": {
+    "sec": 900.5,
+    "rc": 124
+   },
+   "src": "logs/hermes-qwen3.5_9b-ctx64k-20260908-202610.jsonl (причина в записи не названа)"
+  },
+  "board_t1_hermes_empty_call": {
+   "v": {
+    "input_tokens": 20552,
+    "api_calls": 1,
+    "wall_s": 43
+   },
+   "src": "logs/hm-timing-204231.out: usage json, метки времени до/после"
+  },
+  "board_t1_claude_code": {
+   "v": {
+    "first_request_9b": 21241,
+    "sec_median_9b": 121,
+    "calls_sum_9b": 17,
+    "first_request_fable": 19675,
+    "sec_fable": [
+     14.6,
+     14.9,
+     16.2
+    ],
+    "calls_fable": {
+     "Bash": 9
+    },
+    "turns_fable": [
+     4,
+     4,
+     4
+    ]
+   },
+   "src": "facts-ep03 totals.cc.first_request_tokens, per_task.t1.cc; fable: записи t1"
+  },
+  "board_first_request": {
+   "v": {
+    "dsh": 7988,
+    "opencode": 16476,
+    "hermes_empty": 20552,
+    "claude_code_9b": 21241,
+    "claude_code_fable": 19675
+   },
+   "src": "первый запрос к модели: dsh — facts-ep03 (usage первого ответа); opencode — step_finish[0].tokens.input; hermes — пустой вызов hm-timing; claude code — session_stats первого ответа"
+  },
+  "b27_params": {
+   "v": "26.9B",
+   "src": "probe27b-211810.out: details.parameter_size"
+  },
+  "b27_quant": {
+   "v": "IQ3_S",
+   "src": "probe27b: quantization_level"
+  },
+  "b27_ps_size_gb": {
+   "v": 12.02,
+   "src": "probe27b: ollama ps size"
+  },
+  "b27_vram_used_mib": {
+   "v": 14199,
+   "src": "probe27b: nvidia-smi memory.used"
+  },
+  "b27_vram_total_mib": {
+   "v": 16311,
+   "src": "probe27b: nvidia-smi memory.total"
+  },
+  "b27_vram_used_gb": {
+   "v": 13.9,
+   "src": "vram_used_mib/1024"
+  },
+  "b27_tok_s": {
+   "v": 28.0,
+   "src": "probe27b: tok/s на eval_tok=200"
+  },
+  "b27_load_s": {
+   "v": 6.5,
+   "src": "probe27b: load_s"
+  },
+  "b27_ctx": {
+   "v": 32768,
+   "src": "probe27b: ollama ps context"
+  },
+  "b27_ollama": {
+   "v": "0.32.1",
+   "src": "probe27b: ollama version"
+  },
+  "b27_dsh_t1": {
+   "v": {
+    "ok": true,
+    "sec": 44.5,
+    "reasoning_steps": 5
+   },
+   "src": "logs/dsh-qwen3.8-27b-gsq-ctx32k-20260908-211955.jsonl"
+  },
+  "b27_vs_9b_dsh_t1_median": {
+   "v": 78,
+   "src": "facts-ep03 per_task.t1.dsh.sec_median (для сравнения с 44.5)"
+  },
+  "power_fable": {
+   "v": null,
+   "src": "за окно 21 прогона (09:05–09:11) замера мощности НЕТ: юнит ep03-power остановлен 05.09 15:35, батч ep04-fable-batch шёл без сборщика; отдельная четвёртая серия 09:55–09:57 снята под юнитом ep04-fable-power (logs/power-fable-20260909-095511.csv) — см. power_series, в 21 прогон не входит"
+  },
+  "ps_file": {
+   "v": "logs/cc-repo-claude-fable-5-1-20260909-095516.jsonl",
+   "src": "четвёртая серия, 7 записей, в 21 не входит"
+  },
+  "ps_passed": {
+   "v": [
+    7,
+    7
+   ],
+   "src": "count(ok) по logs/cc-repo-claude-fable-5-1-20260909-095516.jsonl"
+  },
+  "ps_window_s": {
+   "v": 139,
+   "src": "END − START из logs/fable-power-20260909-095511.out"
+  },
+  "ps_start_end": {
+   "v": [
+    "09:55:16",
+    "09:57:35"
+   ],
+   "src": "logs/fable-power-20260909-095511.out: START/END"
+  },
+  "ps_samples": {
+   "v": [
+    128,
+    137
+   ],
+   "src": "logs/power-fable-20260909-095511.csv: строк в окне START..END / всего"
+  },
+  "ps_w_mean": {
+   "v": 30.3,
+   "src": "mean(W) по отсчётам в окне"
+  },
+  "ps_w_min": {
+   "v": 28.91,
+   "src": "min(W) в окне"
+  },
+  "ps_w_median": {
+   "v": 30.15,
+   "src": "median(W) в окне"
+  },
+  "ps_w_max": {
+   "v": 32.88,
+   "src": "max(W) в окне"
+  },
+  "ps_wh_window": {
+   "v": 1.168,
+   "src": "mean(W) × (END−START)/3600 — метод EP03 (make_facts_ep03.energy)"
+  },
+  "ps_wh_window_hold": {
+   "v": 1.167,
+   "src": "контроль: Σ W_i × (t_{i+1} − t_i)/3600 по соседним отсчётам в окне (пропуски по 2 с учтены)"
+  },
+  "ps_wh_per_pass": {
+   "v": 0.167,
+   "src": "wh_window / passed(7)"
+  },
+  "ps_wh_by_task": {
+   "v": {
+    "t1": 0.189,
+    "t2": 0.192,
+    "t3": 0.131,
+    "t4": 0.249,
+    "t5": 0.055,
+    "t6": 0.16,
+    "t7": 0.175
+   },
+   "src": "sec × mean(W)/3600 по каждой задаче"
+  },
+  "ps_wh_by_task_sum": {
+   "v": 1.15,
+   "src": "сумма по задачам (меньше окна: окно включает make.py и судью)"
+  },
+  "ps_sec": {
+   "v": {
+    "t1": 22.5,
+    "t2": 22.8,
+    "t3": 15.6,
+    "t4": 29.6,
+    "t5": 6.6,
+    "t6": 19.0,
+    "t7": 20.8
+   },
+   "src": "sec по задачам t1..t7"
+  },
+  "ps_sec_sum": {
+   "v": 136.9,
+   "src": "sum(sec)"
+  },
+  "ps_turns": {
+   "v": {
+    "t1": 4,
+    "t2": 3,
+    "t3": 3,
+    "t4": 5,
+    "t5": 1,
+    "t6": 3,
+    "t7": 3
+   },
+   "src": "num_turns"
+  },
+  "ps_calls_by_tool": {
+   "v": {
+    "Bash": 15
+   },
+   "src": "tool_calls, сумма"
+  },
+  "ps_cost_sum": {
+   "v": 1.9127,
+   "src": "sum(cost_usd) по серии"
+  },
+  "ps_first_request": {
+   "v": [
+    19674,
+    19732
+   ],
+   "src": "min/max first_request_tokens"
+  },
+  "ps_gpu_mib": {
+   "v": [
+    1633,
+    1746
+   ],
+   "src": "logs/power-fable-20260909-095511.csv: memory.used min/max в окне"
+  },
+  "ps_gpu_util_max": {
+   "v": 9,
+   "src": "logs/power-fable-20260909-095511.csv: utilization.gpu max в окне"
+  },
+  "ps_vs_ep03_wh_per_pass": {
+   "v": {
+    "dsh": 11.2,
+    "cc_9b": 16.1,
+    "fable_idle_card": 0.167
+   },
+   "src": "facts-ep03 totals.*.wh_per_pass; fable — карта в простое"
+  },
+  "ps_ratio_ep03_over_fable": {
+   "v": {
+    "dsh": 67.1,
+    "cc_9b": 96.4
+   },
+   "src": "ep03 wh_per_pass / fable wh_per_pass"
+  },
+  "ps_vs_ep03_w": {
+   "v": {
+    "ep03_idle_w": 27,
+    "ep03_peak_w": 177,
+    "ep03_mean_w_dsh": 103,
+    "ep03_mean_w_cc": 143,
+    "fable_mean_w": 30.3
+   },
+   "src": "facts-ep03 derived.idle_w (1-й процентиль), derived.peak_w, totals.*.mean_w; fable — mean(W) в окне серии"
+  },
+  "ps_t5_reply": {
+   "v": "ASK: The ticket asks both to upgrade the payment service to Python 3.12 and to keep it on 3.11 because the SDK is not certified above 3.11. Which is intended, upgrading to 3.12 or staying on 3.11?",
+   "src": "reply записи t5 четвёртой серии"
+  },
+  "ps_caveat": {
+   "v": "W — nvidia-smi power.draw видеокарты стенда (не хоста целиком), карта простаивает: модель работает в датацентре, его энергия неизвестна и не утверждается. Метод и колонки те же, что у EP03 (power_sample_s=1).",
+   "src": "обязательная оговорка"
+  }
+ },
+ "meta": {
+  "date": "2026-09-09",
+  "episode": "EP04",
+  "logs": [
+   "logs/cc-repo-claude-fable-5-1-20260909-090524.jsonl",
+   "logs/cc-repo-claude-fable-5-1-20260909-090724.jsonl",
+   "logs/cc-repo-claude-fable-5-1-20260909-090911.jsonl",
+   "logs/cc-repo-claude-fable-5-1-20260908-212958.jsonl",
+   "logs/facts-ep03.json",
+   "logs/opencode-qwen3.5_9b-ctx32k-20260908-202345.jsonl",
+   "logs/opencode-events/tmp-rt-oc-l1gjtqh4-t1.jsonl",
+   "logs/hermes-qwen3.5_9b-ctx32k-20260908-202434.jsonl",
+   "logs/hermes-qwen3.5_9b-ctx64k-20260908-205139.jsonl",
+   "logs/hermes-qwen3.5_9b-ctx64k-20260908-202610.jsonl",
+   "logs/hm-timing-204231.out",
+   "logs/probe27b-211810.out",
+   "logs/dsh-qwen3.8-27b-gsq-ctx32k-20260908-211955.jsonl",
+   "logs/cc-repo-claude-fable-5-1-20260909-095516.jsonl",
+   "logs/power-fable-20260909-095511.csv",
+   "logs/fable-power-20260909-095511.out",
+   "logs/dsh-qwen3.5_9b-ctx32k-20260905-0440.jsonl",
+   "logs/dsh-qwen3.5_9b-ctx32k-20260905-0658.jsonl",
+   "logs/dsh-lost-runs.jsonl",
+   "logs/fable-batch-20260909-090524.out"
+  ],
+  "sessions": "~/.claude/projects/-tmp-rt-cc-{ksq0at4v,nwatg0rm,o22ckpv7}-t1..t7 (независимый пересчёт вызовов)"
+ }
+}
